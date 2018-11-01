@@ -1,0 +1,346 @@
+﻿<templates name="mobile">
+    <!-- App -->
+    <template name="app">
+        <section>
+            <section db-name="_panels">
+                <header class="header" db-name="Header">
+                    <label class="header-title iconc" db-name="slogan">QShop</label>
+                    <div id="sb-search" class="sb-search" db-name="searchBar">
+                        <form>
+                            <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+                            <input class="sb-search-submit" value="">
+                            <span class="sb-icon-search"></span>
+                        </form>
+                    </div>
+                    <ul class="menu" db-name="menuContent" db-debug db-foreach="this.Options">
+                        <template>
+                            <li class="menu-item" on-click="this.[:UI.Layout].OnOptionClicked"><a db-bind="Title" href="#" db-job="label"></a></li>
+                        </template>
+                    </ul>
+                </header>
+                <section class="view" db-name="_main"></section>
+                <nav class="nav" db-foreach="this.[:UI.Layout].Items" db-name="NavList">
+                    <template>
+                        <a href="#" db-name="nav_home" db-cmd="initNav" on-click="this.[:UI.Layout].navClicked"><i class="material-icons"></i></a>
+                    </template>
+                </nav>
+            </section>
+        </section>
+    </template>
+    <template name="nav-bottom">
+        <section>
+            <div class="display-middle" style="width:60%">
+                <button class="btn btn-primary" style="width:100%;padding:10px" on-click="this.[:controls.Options].OkClick">Ok</button>
+                <button class="btn btn-danger" style="width:100%;padding:10px" on-click="this.[:controls.Options].CancelClick">Cancel</button>
+            </div>
+            <nav class="nav" db-foreach="Items" db-name="ListView">
+                <template>
+                    <a href='#' db-name="nav_home" on-click="this.[:controls.Options].OnClicked"><i class="material-icons" db-bind="Title" db-job="label"></i></a>
+                </template>
+            </nav>
+        </section>
+    </template>
+    <!-- Home -->
+    <template name="home">
+        <section class="panel ns">
+            <label id="lbl" db-bind="Facture" db-exec="Facture.IsOpen->show">
+                <span class="rect-tag pos-rt">
+                    <span class="rect-tag-label">Est ouvert</span>
+                </span>
+                <h2><text db-bind="Ref" db-job="label">DIFFERENCE KIT</text></h2>
+            </label>
+            <div db-foreach="Items" as-pager>
+                <ul db-content on-touchend="this.TouchEnd" class="row ui-icomoon" id="sortable" db-name="ListView" item-template="mobile.product"></ul>
+            </div>
+        </section>
+    </template>
+
+    <!-- Clients -->
+    <template name="newFacture">
+        <section class="content" db-bind="data">
+            <header class="header">
+                <div class="sb-search sb-search-open">
+                    <div>
+                        <input class="sb-search-input in" db-job="search" autocomplete="on" autosearch="true" placeholder="Client name..." type="search">
+                        <span class="sb-icon-search sb-icon-search-hide" on-click="^OkClicked">OK</span>
+                        <span class="sb-icon-search sb-icon-search-hide" on-click="^CancelClicked" style="right: 61px;">NO</span>
+                    </div>
+                </div>
+            </header>
+            <div class="panel ns container" style="padding-top:69PX">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb40 text-center">
+                        <h1 class="page-title">La list clientel</h1>
+                        <!-- /.section-title -->
+                    </div>
+                </div>
+
+                <div class="row cl-card" db-foreach="" as-pager>
+                    <section db-content item-template="mobile.clientLabel" db-name="ListView"></section>
+                </div>
+            </div>
+
+        </section>
+    </template>
+    <template name="clientLabel">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mb30">
+            <div data-aos="fade-up" class="team-block">
+                <div class="team-img">
+                    <a href="#">
+                        <img src="/images/avatar2.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="team-content">
+                    <h4 db-job="label" class="text-center" db-bind="Name">William B. Smith</h4>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- Simple-Edit -->
+    <template name="simpleedit">
+        <div class="card-container ns">
+            <div class="green-card fadein">
+                <div class="" style="background: #2b4c25;width: 100%;padding: 5PX;" db-bind="Title">Title</div>
+                <div class="gc-header">
+                    <input db-name="box" type="number" value="1" db-job="number" db-twoway="true">
+                </div>
+
+                <div class="gc-container">
+                    <div class="b">
+                        <button class="bc" on-click="this.[:controls.SimpleEdit].OkClicked">OK</button>
+                        <button class="bc" on-click="this.[:controls.SimpleEdit].CancelClicked">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- Product -->
+    <template name="product">
+        <li>
+            <label id="lbl" class="ns">
+                <span class="rect-tag pos-rt">
+                    <span class="rect-tag-label" db-bind="Value" db-job="price">I’m Grey</span>
+                    <span class="rect-tag-label" style="background: #34495e;" db-bind="CurrentArticle" db-job="show"><text db-bind="Count" db-job="number">220.00 DZD</text> Unité</span>
+                </span>
+
+                <h2><span db-bind="SerieName" db-job="label">Address 3</span><text db-bind="Name" db-job="label">201 Central calefornia algeria</text></h2>
+                <text db-bind="Dimention" db-job="label">Albuquerque, NM 87102</text>
+            </label>
+        </li>
+    </template>
+
+    <!-- Facture -->
+    <template name="facture">
+        <section class="panel ns">
+            <label id="lbl" db-bind="SelectedFacture">
+                <span class="rect-tag pos-rt">
+                    <span class="rect-tag-label" db-bind="IsOpen" db-job="show">Est ouvert</span>
+                </span>
+                <h1><text db-bind="Ref" db-job="label">DIFFERENCE KIT</text></h1>
+            </label>
+            <section db-foreach="Items" db-name="ListView" item-template="mobile.article">
+                <ul on-touchend="this.[:controls.abstracts.MobilePage].TouchEnd" class="row ui-icomoon" id="sortable" db-content />
+            </section>
+        </section>
+    </template>
+
+    <!-- Article -->
+    <template name="article">
+        <li>
+            <label id="lbl" class="ns">
+                <span class="rect-tag pos-rt">
+                    <span class="rect-tag-label" db-bind="Price" db-job="price">I’m Grey</span>
+                </span>
+                <h2>
+                    <span db-bind="Product.SerieName" db-job="label">Address 3</span>
+                    <text db-bind="Count" db-job="number">201 Central calefornia algeria</text>
+                </h2>
+                <text db-bind="Product" db-job="label">Albuquerque, NM 87102</text>
+            </label>
+        </li>
+    </template>
+
+    <!-- Factures -->
+    <template name="factures">
+        <section class="panel ns">
+            <div db-foreach="this.[:controls.abstracts.MobilePage].Items" as-pager>
+                <ul db-content on-touchend="this.[:controls.abstracts.MobilePage].TouchEnd" class="row ui-icomoon" id="sortable" db-name="ListView" item-template="mobile.facturecard"></ul>
+            </div>
+        </section>
+    </template>
+
+    <!-- Facture-Card -->
+    <template name="facturecard">
+        <div class="profile-card ns">
+            <span class="rect-tag pos-rt">
+                <span class="rect-tag-label" db-bind="IsOpen" db-job="show">Est ouvert</span>
+            </span>
+            <img class="avatar" src="./assets/images/avatar.png" alt="Avatar" style="width:100%">
+            <div class="profile-container">
+                <h4><b db-job="label" db-bind="Client.FullName">John Doe</b><span db-bind="Ref" db-job="label" class="float-right badge badge-primary"></span></h4>
+                <p>Vendeur <span db-bind="Vendeur.Name" db-job="label" class="float-right badge badge-primary"></span></p>
+                <p>Date <span db-bind="Date" db-job="date" class="float-right badge badge-primary"></span></p>
+                <p>Total <span db-bind="Total" db-job="price" class="float-right badge badge-primary"></span></p>
+                <p>N° Articles <span db-bind="NArticles" db-job="number" class="float-right badge badge-primary"></span></p>
+                <p>Observation: <text style="padding-left:2em" db-bind="Observation" db-job="label"></text></p>
+            </div>
+        </div>
+    </template>
+
+    <!-- Facture-Item -->
+    <template name="facture-item">
+        <li class="ns">
+            <label id="lbl" class="ns">
+                <span class="label-before label-before0">
+                    <span class="glyphicon text-center" db-bind="Qte" db-job="number"></span>
+                </span>
+                <span class="label-before label-before1">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <span class="glyphicon glyphicon-trash"></span>
+                    <span class="glyphicon glyphicon-edit"></span>
+                </span>
+                <h2><span db-bind="Date" db-job="date">Address 3</span><text db-bind="Montant" db-job="price">201 Central calefornia algeria</text></h2>
+                <text db-bind="Observation" db-job="label">Albuquerque, NM 87102</text>
+            </label>
+        </li>
+    </template>
+
+    <!-- Search -->
+    <template name="search">
+        <div id="sb-search" class="sb-search sb-search-open ns">
+            <form>
+                <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+                <input class="sb-search-submit" type="submit" value="">
+                <span class="sb-icon-search"></span>
+            </form>
+        </div>
+    </template>
+
+    <!-- Login Form -->
+    <template name="login-form">
+        <div class="login-form">
+            <div class="module form-module">
+                <a href="#" style="padding:0" class="toggle" on-click="this.[:UI.Layout]._toggle">
+                    <i href="#" class="material-icons" db-name="toggleIcon">create</i>
+                </a>
+                <div class="form" db-name="loginForm">
+                    <h2 db-name="LoginTitle">Login to your account</h2>
+                    <div>
+                        <input type="text" name="username" placeholder="Username" db-bind="Username" db-job="input" db-check="username" db-twoway="true" />
+                        <input type="password" name="password" placeholder="Password" db-bind="Pwd" db-job="input" db-check="password" db-twoway="true" />
+                        <div class="form-check" style="">
+                            <input type="checkbox" db-name="hors_conn" class="form-check-input" id="exampleCheck1" style="width: unset;display: unset;">
+                            <label class="form-check-label" for="exampleCheck1">Hors connection mode</label>
+                        </div>
+                        <button on-click="this.[:UI.Layout]._login">Login</button>
+                    </div>
+
+                </div>
+                <div class="form" style="display:none" db-name="signupForm">
+                    <h2 db-name="SignupTitle">Create an account</h2>
+                    <div>
+                        <input type="text" placeholder="Username" name="username" db-bind="Username" db-job="input" db-check="username" db-twoway="true" />
+                        <input type="text" placeholder="FirstNae" name="password" db-bind="Client.FirstName" db-job="input" db-check="name" db-twoway="true" />
+                        <input type="text" placeholder="LastName" db-bind="Client.LastName" db-job="input" db-check="name" db-twoway="true" />
+                        <input type="password" placeholder="Password" db-bind="Pwd" db-job="input" db-check="password" db-twoway="true" />
+                        <input type="email" placeholder="Email Address" db-bind="Client.Email" db-job="input" db-check="name" db-twoway="true" />
+                        <input type="tel" placeholder="Phone Number" db-bind="Client.Tel" db-job="input" db-check="name" db-twoway="true" />
+                        <button on-click="this.[:UI.Layout]._signup">Register</button>
+                    </div>
+                </div>
+                <div class="cta"><a href="#" on-click="this.[:UI.Layout].pwdForgotten">Forgot your password?</a></div>
+            </div>
+            <a href="#" class="at-button"><i class="material-icons" on-click="this.[:UI.Layout].hello">link</i></a>
+        </div>
+    </template>
+
+    <!-- Settings Form -->
+    <template name="settings">
+        <div class="login-form">
+            <div class="module form-module">
+                <a href="#" style="padding:0" class="toggle" on-click="_toggle">
+                    <i class="material-icons" db-name="toggleIcon">create</i>
+                </a>
+                <div class="form" db-name="loginForm">
+                    <h2 db-name="LoginTitle">Server Settings</h2>
+                    <div autocomplete="on" action="#" novalidate="novalidate">
+                        <input class="selectable" autocomplete="url" type="url" name="url" placeholder="IP Address Or Url" db-bind="ServerAddress" db-job="input" db-check="text" db-twoway="3" />
+                        <input class="selectable" autocomplete="port" type="number" max="56535" min="1" name="port" db-bind="Port" db-job="number" db-twoway="3" />
+                        <div class="form-check" style="">
+                            <input type="checkbox" db-name="hors_conn" class="form-check-input" id="exampleCheck1" style="width: unset;display: unset;">
+                            <label class="form-check-label" for="exampleCheck1">Hors connection mode</label>
+                        </div>
+                        <button on-click="this.[UI.Layout].Connect">Connect</button>
+                    </div>
+                </div>
+                <div class="form" style="display:none" db-name="signupForm">
+                    <h2 db-name="SignupTitle">Instructions</h2>
+                    <div>
+                        <p>
+                            Tell me a joke And i will solve your problem with android .
+                            <h1>Yeh </h1>
+                        </p>
+                    </div>
+                </div>
+                <div class="cta"><a href="#" on-click="this.[:UI.Layout].pwdForgotten">ACHOUR Brahim - QCompany Inc</a></div>
+            </div>
+            <!--<a href="#" class="at-button"><i class="material-icons" on-click="this.[:qapp.AuthApp].hello">link</i></a>-->
+        </div>
+    </template>
+
+    <!-- Clients -->
+    <template name="clients">
+        <section class="panel ns">
+            <div db-foreach="Items" as-pager>
+                <ul db-content on-touchend="this.[:controls.abstracts.MobilePage].TouchEnd" class="row ui-icomoon" id="sortable" db-name="ListView" item-template="mobile.clientcard"></ul>
+            </div>
+            <!--<div class="cer-container open" id="x">
+                <div class="circle0">+</div>
+                <div class="circle1">-</div>
+                <div class="circle2">*</div>
+                <div class="circle3">s</div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+            </div>-->
+        </section>
+    </template>
+
+    <!-- Client-Card -->
+    <template name="clientcard">
+        <div class="profile-card ns">
+            <img class="avatar" src="./assets/images/avatar.png" alt="Avatar" style="width:100%">
+            <div class="profile-container">
+                <h4><b db-job="label" db-bind="FullName">John Doe</b></h4>
+                <p>Nick-Name <span db-bind="Name" db-job="label" class="float-right badge badge-primary"></span></p>
+                <p>Total Achats <span db-bind="MontantTotal" db-job="price" class="float-right badge badge-primary"></span></p>
+                <p>SoldTotal <span db-bind="VersmentTotal" db-job="number" class="float-right badge badge-primary"></span></p>
+                <p>Observation: <text style="padding-left:2em" db-bind="Observation" db-job="label"></text></p>
+            </div>
+        </div>
+    </template>
+
+    <!--
+         <span class="label-before label-before0">
+                        <span class="glyphicon text-center"><text  db-bind="Qte" db-job="number"></text></span>
+                        <span class="glyphicon "></span>
+                        <span class="glyphicon "></span>
+                        <span class="glyphicon text-center" db-bind="CurrentArticle.Count" db-job="label"></span>
+                    </span>
+                    <span class="label-before label-before1">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        <span class="glyphicon glyphicon-minus"></span>
+                        <span class="glyphicon glyphicon-trash"></span>
+                        <span class="glyphicon glyphicon-edit"></span>
+                    </span>
+        -->
+
+</templates>
+
+<!--
+
+Templates :
+    https://s.bootsnipp.com/iframe/92xNm
+    https://s.bootsnipp.com/iframe/qr9bx
+    -->

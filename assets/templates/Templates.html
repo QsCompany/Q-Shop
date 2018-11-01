@@ -1,0 +1,2199 @@
+﻿<templates>
+    <require module="../../abstract/models"></require>
+    <require module="../../lib/q/sys/corelib"></require>
+
+    <descriptor type="bind.DObject" name="templates">
+
+        <template name="applyPriceBasic" uiactions="delete">
+            <form role="form">
+                <div class="row">
+                    <div class="form-group  col-xs-6" db-job="show" ofType="models.FakePrice" target="0">
+                        <label>Quantity</label>
+                        <input type="number" class="form-control  unborder input" placeholder="Entrer Qte Rester" db-twoway='true' db-bind="Qte" db-job='number'>
+                    </div>
+
+                    <div class="form-group  col-xs-6 ">
+                        <label>Prix d'Achat</label>
+                        <input type="number" class="form-control  unborder input" placeholder="Entrer Prix D'Achat" db-twoway='true' db-bind="PSel" db-job='number'>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-xs-6">
+                        <label>Detaillant</label>
+                        <input type="number" class="form-control unborder input" placeholder="Entrer Prix D'Achat" db-twoway='true' db-bind="Value" db-job='number'>
+                    </div>
+                    <div class="form-group col-xs-6 ">
+                        <label>Proffessionnal</label>
+                        <input type="number" class="form-control  unborder input" placeholder="Entrer Prix D'Achat" db-twoway='true' db-bind="PValue" db-job='number'>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-6">
+                        <label>Demi-Grossist</label>
+                        <input type="number" class="form-control  unborder input" placeholder="Entrer Prix D'Achat" db-twoway='true' db-bind="HWValue" db-job='number'>
+                    </div>
+                    <div class="form-group col-xs-6">
+                        <label>Grossist</label>
+                        <input type="number" class="form-control  unborder input" placeholder="Entrer Prix D'Achat" db-twoway='true' db-bind="WValue" db-job='number'>
+                    </div>
+                </div>
+            </form>
+        </template>
+
+        <template name="priceBasic" uiactions="delete">
+            <form role="form">
+                <div class="form-group" db-job="show" ofType="models.FakePrice" target="0">
+                    <label>Désignation</label>
+                    <input db-bind="Product" db-job="auto-product" item-template="templates.art-dtl" db-twoway="true" text-transform="uppercase" class="form-control unborder input" placeholder="Enter the Product Name">
+                </div>
+                <div class="row">
+                    <div class="form-group  col-xs-6" db-job="show" ofType="models.FakePrice" target="0">
+                        <label>Quantity</label>
+                        <input type="number" class="form-control  unborder input" placeholder="Entrer Qte Rester" db-twoway='true' db-bind="Qte" db-job='number'>
+                    </div>
+
+                    <div class="form-group  col-xs-6 ">
+                        <label>Prix d'Achat</label>
+                        <input type="number" class="form-control  unborder input" placeholder="Entrer Prix D'Achat" db-twoway='true' db-bind="PSel" db-job='number'>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-xs-6">
+                        <label>Detaillant</label>
+                        <input type="number" class="form-control unborder input" placeholder="Entrer Prix D'Achat" db-twoway='true' db-bind="Value" db-job='number'>
+                    </div>
+                    <div class="form-group col-xs-6 ">
+                        <label>Proffessionnal</label>
+                        <input type="number" class="form-control  unborder input" placeholder="Entrer Prix D'Achat" db-twoway='true' db-bind="PValue" db-job='number'>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-6">
+                        <label>Demi-Grossist</label>
+                        <input type="number" class="form-control  unborder input" placeholder="Entrer Prix D'Achat" db-twoway='true' db-bind="HWValue" db-job='number'>
+                    </div>
+                    <div class="form-group col-xs-6">
+                        <label>Grossist</label>
+                        <input type="number" class="form-control  unborder input" placeholder="Entrer Prix D'Achat" db-twoway='true' db-bind="WValue" db-job='number'>
+                    </div>
+                </div>
+            </form>
+        </template>
+        <template name="priceEditor">
+            <div>
+                <div db-cmd="template" as="templates.priceBasic"></div>
+                <div class="row" db-job="show" ofType="models.FakePrice" target="0">
+                    <section class="fit-left" style="margin-top:20px;" db-bind="ApplyPrice" db-job="show" target="0">
+                        <div class="row panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title" db-cmd="accordion" target="1/#c1">
+                                    <a>
+                                        Product Price
+                                        <span class="glyphicon glyphicon-euro pull-right"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="c1" class="panel-collapse  collapse">
+                                <div id="1c1" class="panel-body">
+                                    <div class="row" db-cmd="template" as="templates.applyPriceBasic"></div>
+                                </div>
+                                <div class="panel-footer fit-right">
+                                    <input type="button" class="btn b btn-primary pull-right" db-cmd="prdPrice" db-bind="^" db-data="restore" value="Ignore" />
+                                    <input type="button" class="btn b btn-danger pull-right" db-cmd="prdPrice" db-bind="^" db-data="update" value="Save" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <span style="display:none" db-bind="this.[:UI.Modals.BasicModalEditor].IsEditable" db-job="readonly" target="1"></span>
+            </div>
+        </template>
+
+        <template name="prdPriceEditor">
+            <section>
+                <div class="row" db-cmd="template" as="templates.priceEditor"></div>
+                <div class="row media" style="float:right">
+                    <button type="button" db-data='go' db-job='opensignup' class="btn b btn-default pull-right">Signup</button>
+                    <button type="button" db-data='login' db-job='login' class="btn b btn-danger pull-right">Login</button>
+                </div>
+            </section>
+        </template>
+    </descriptor>
+    <descriptor type="models.Product" name="Product">
+        <template name="Cart">
+            <div>
+                <div class="thumbnail active ProductCart" style=" height: 255px;">
+                    <span class="resize" db-bind="Picture" db-job="image">
+                    </span>
+                    <div class="caption">
+                        <h4 class="pull-right">
+                            <span style="color:red"
+                                  db-bind="Price.Value"
+                                  db-job="price">200</span>
+                        </h4>
+                        <h4>
+                            <a href="#" db-bind="Name" db-job="label">Coude 110</a>
+                        </h4>
+                        <div>
+                            <p db-bind="Description" db-job="label" style="overflow:auto">
+                                this is pvc coude for every one
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <span style="margin-bottom:0px" class="ProductControlPanel">
+                    <span class="pull-left ProductControlPanel-Left">
+                        <span class="label label-danger" title="Quantity Of this Product in Stock" db-job='number' db-bind="Price.Qte">25 pcs</span>
+                        <span class=" label label-success" title="Quantity Of this Product in the Current Facture" db-job='number' db-bind="Price.CurrentArticle.Count">25 pcs</span>
+                    </span>
+
+                    <span class="ratings pull-left ProductControlPanel-Left">
+                        <span db-bind="Quality" db-job="rateing">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star">
+                            </span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                        </span>
+                    </span>
+                    <span class="pull-right">
+                        <span db-bind='$modify' db-job="showIf" style="display:none"></span>
+                        <span class="ii glyphicon glyphicon-open" db-job="prod-add"></span>
+                        <span class="ii glyphicon glyphicon-plus-sign" db-job="prod-plus"></span>
+                        <span class="ii glyphicon glyphicon-minus-sign" db-job="prod-minus"></span>
+                        <span class="ii glyphicon glyphicon-remove-circle" db-job="prod-remove"></span>
+                    </span>
+                </span>
+            </div>
+        </template>
+
+    </descriptor>
+
+    <descriptor type="models.Client" name="Client">
+        <template name="login">
+            <section db-job="stop">
+
+                <div class="container" db-job="stop">
+                    <script>;</script>
+                    <div class="row">
+
+                        <div class="col-md-4 pull-right" style="background: #00aff2; padding: 15px; background-color: #337ab7;">
+                            <div class="media block block-primary-head no-pad">
+
+                                <h3>
+                                    <i class="fa fa-pencil h3i glyphicon glyphicon-pencil"></i>
+                                    Information
+
+                                </h3>
+
+                                <div class="block-content media-body">
+                                    <form role="form">
+                                        <div class="form-group ">
+                                            <label>User Name</label>
+                                            <input type="text" autocomplete="on" accept="ctrl+v" contenteditable="true" dirname="username" inputmode="latin-name" required vocab="http://data-vocabulary.org" uiactions="expand" spellcheck="true" capture class="form-control fc" placeholder="Enter your Username" db-check='username' db-bind="Username" db-job='input' db-twoway="true" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" class="form-control fc" placeholder="Enter Your Password" db-check='password' db-bind="Pwd" db-job="input" db-twoway="true" />
+                                        </div>
+                                        <button type="button" db-data='go' db-job='opensignup' class="btn b btn-default pull-right">Signup</button>
+                                        <button type="button" db-data='login' db-job='login' class="btn b btn-danger pull-right">Login</button>
+                                    </form>
+                                </div>
+                                <div class="badge " style="color:black;margin:auto" db-bind="CheckLogging" db-job="loggedjob" db-twoway="false">
+                                    YOU ARE NOT LOGGED .
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template name="signup">
+            <section>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4 pull-right" style="background: #00aff2; padding: 15px; background-color: #337ab7;">
+                            <div class="media block block-primary-head no-pad">
+                                <h3>
+                                    <i class="fa fa-pencil glyphicon glyphicon-pencil h3i"></i>
+                                    Information
+                                </h3>
+                                <div class="block-content media-body">
+                                    <div role="form">
+                                        <div class="form-group form-control-static ">
+                                            <label>User Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter User Name" db-check='username' db-bind="Username" db-job='input' db-twoway="true" />
+                                        </div>
+                                        <div class="glyphicon icon-bar fa-line-chart"></div>
+
+                                        <div class="form-group">
+                                            <label>First Name</label>
+                                            <input type="text" s class="form-control" placeholder="Enter your First Name" db-check='name' db-bind="Client.FirstName" db-job='input' db-twoway="true" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Last Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter your Last Name" db-check='name' db-bind="Client.LastName" db-job='input' db-twoway="true" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Mobile</label>
+                                            <input type="text" class="form-control fc" placeholder="Enter your Mobile Number" db-check='Client.tel' db-bind="Client.Tel" db-job="input" db-twoway="true" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="text" class="form-control fc" placeholder="Enter your Mail-Box" db-check='mail' db-bind="Client.Email" db-job="input" db-twoway="true" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" class="form-control fc" placeholder="Enter Your Password" db-check='password' db-bind="Pwd" db-job="input" db-twoway="true" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" class="form-control fc" placeholder="Re-Enter Your Password" db-check='password' db-bind="Pwd" db-job="vpassword" db-twoway="true" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Activities</label>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="panel-group" style="margin: 0PX -20PX;">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title" db-cmd="accordion" target="1/#c1">
+                                                                    <a data-toggle="collapse">
+                                                                        Etablissment
+                                                                        <span class="glyphicon glyphicon-copyright-mark pull-right"></span>
+
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="c1" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    <button type="button" class="btn btn-primary pull-right b" db-job='select' db-bind='Client.Job' db-const='0' db-style='btn-primary'>Select</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title" db-cmd="accordion" target="1/#c2">
+                                                                    <a data-toggle="collapse">
+                                                                        Entrepreneur
+                                                                        <span class="glyphicon glyphicon-export pull-right"></span>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="c2" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    Test
+                                                                    <button type="button" class="btn btn-primary pull-right b" db-job='select' db-bind='Client.Job' db-const='1' db-style='btn-primary'>Select</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title" db-cmd="accordion" target="1/#c4">
+                                                                    <a data-toggle="collapse">
+                                                                        Proffessional
+                                                                        <span class="glyphicon glyphicon-user pull-right"></span>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="c4" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+
+
+
+                                                                    <button type="button" class="btn btn-primary pull-right b" db-job='select' db-bind='Client.Job' db-const='2' db-style='btn-primary'>Select</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title" db-cmd="accordion" target="1/#c5">
+                                                                    <a data-toggle="collapse">
+                                                                        Travaux Familiare
+                                                                        <span class="glyphicon glyphicon-home pull-right"></span>
+                                                                    </a>
+
+                                                                </h4>
+                                                            </div>
+                                                            <div id="c5" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+
+
+
+                                                                    <button type="button" class="btn btn-primary pull-right b" db-job='select' db-bind='Client.Job' db-const='3' db-style='btn-primary'>Select</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title" db-cmd="accordion" target="1/#c3">
+                                                                    <a data-toggle="collapse">
+                                                                        Detail
+                                                                        <span class="glyphicon glyphicon-briefcase pull-right"></span>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="c3" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+
+
+
+                                                                    <button type="button" class="btn btn-primary pull-right b" db-job='select' db-bind='Client.Job' db-const='4' db-style='btn-primary'>Select</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <button type="button" db-job='signup' class="btn btn-default pull-right b">Signup</button>
+                                        <button type="button" db-job='openlogin' class="btn btn-danger pull-right b">Login</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template name="clients">
+            <div>
+                <div class="panel-group panel-primary" item-template='Client.info' style="width:auto" item-style="list-group-item">
+                    <div class="panel-heading">
+                        <div class="margin">
+                            <div class="row">
+                                <a class="btn btn-primary">
+                                    <h3 class="" db-bind="FullName" db-job="label" db-twoway="1">Karim Matmoure.</h3>
+                                </a>
+                            </div>
+                            <h4 class="row">
+                                <span class="glyphicon glyphicon-phone"></span>
+                                <span db-bind='Tel' db-job="label" style="margin-left:15px"> 0541082226</span>
+                            </h4>
+                            <h4 class="row">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                                <span db-bind='Email' db-job="label" style="margin-left:15px">Qshop.Algerie@outlook.com</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" id="test">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-align-center glyphicon-user"></span><p style="display:inline;margin-left:25px">My Clients</p>
+                        </div>
+                        <div>
+                            <div class="panel-body" db-bind='Clients' db-content='' item-style="list-group-item">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template name="table">
+            <section>
+                <div class="panel-group panel-primary" db-bind="Client">
+                    <div class="panel-heading">
+                        <div class="margin">
+                            <div class="row">
+                                <a class="btn btn-primary">
+                                    <h3 class="" db-bind="FullName" db-job="label" db-twoway="false">Karim Matmoure.</h3>
+                                </a>
+                            </div>
+                            <h4 class="row">
+                                <span class="glyphicon glyphicon-phone"></span>
+                                <span db-bind='Tel' db-job="label" style="margin-left:15px"> 0541082226</span>
+                            </h4>
+                            <h4 class="row">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                                <span db-bind='Email' db-job="label" style="margin-left:15px">Qshop.Algerie@outlook.com</span>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" db-foreach="Clients" item-template="Client.info" item-style="list-group-item">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-align-center glyphicon-user"></span><p style="display:inline;margin-left:25px">My Clients</p>
+                        </div>
+                        <div class="panel-body" db-content>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+
+        <template name="table1">
+            <div class="panel panel-default" id="test">
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Full Name
+                                </th>
+                                <th>
+                                    Tel
+                                </th>
+                                <th>
+                                    Email
+                                </th>
+                                <th>
+                                    Job
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody db-content>
+                            <template>
+                                <tr>
+                                    <span style="display:none;visibility:collapse" db-job="clientStat" db-bind="SoldTotal"></span>
+                                    <td db-job="label" db-bind="FullName" db-twoway="1"></td>
+                                    <td db-job="label" db-bind="Tel" db-twoway="1"></td>
+                                    <td db-job="label" db-bind="Email" db-twoway="1"></td>
+                                    <td db-job="label" db-bind="Job" db-twoway="1"></td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+        <template name="Validation">
+            <div class="panel panel-default" id="test">
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width:auto;max-width:100px">
+                                    Username
+                                </th>
+                                <th>
+                                    Full Name
+                                </th>
+                                <th>
+                                    Tel
+                                </th>
+                                <th>
+                                    Email
+                                </th>
+                                <th>
+                                    Job
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody db-content></tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+    </descriptor>
+
+    <descriptor type="models.Projet" name="Projet">
+        <template name="table1">
+            <div class="panel panel-default" id="test">
+                <div class="panel-body">
+                    <div class="row">
+                        <text db-dec="sitem"></text>
+                        <button type="button" db-job='proj.new' class="btn btn-default  b">Nouveau</button>
+                    </div>
+                    <table class="row table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Name
+                                </th>
+                                <th>Address</th>
+                                <th>                                    Tel                                </th>
+                                <th db-bind="this.SelectedIndex" db-job="number" db-way="->*sitem">                                    Email                                </th>
+                            </tr>
+                        </thead>
+                        <tbody db-content>
+                            <template>
+                                <tr>
+                                    <td db-job="label" db-bind="Name" db-twoway="1"></td>
+                                    <td db-job="label" db-bind="Address" db-twoway="1"></td>
+                                    <td db-job="label" db-bind="Tel" db-twoway="1"></td>
+                                    <td db-job="label" db-bind="Email" db-twoway="1"></td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+        <template name="edit">
+            <section>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="media block block-primary-head no-pad">
+                            <h3>
+                                <i class="fa fa-pencil glyphicon glyphicon-pencil h3i"></i>
+                                Personal Info
+                            </h3>
+                            <div class="block-content media-body">
+                                <form role="form">
+                                    <div class="row">
+                                        <div class="form-group col-xs-12">
+                                            <label>Cient Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter Nick Name" db-twoway='true' db-bind="Name" db-job='input' />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-xs-6">
+                                            <label>First Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter your First Name" db-check='name' db-twoway='true' db-bind="FirstName" db-job='input' />
+                                        </div>
+                                        <div class="form-group col-xs-6">
+                                            <label>Last Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter your Last Name" db-check='name' db-bind="LastName" db-job='input' db-twoway='true' />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-xs-12">
+                                            <label>Full Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter User Name" db-twoway='false' db-bind="FullName" db-job='rinput' readonly spellcheck="true" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-xs-12">
+                                            <label>Mobile</label>
+                                            <input type="text" class="form-control fc" placeholder="Enter your Mobile Number" db-check='tel' db-bind="Tel" db-job="input" db-twoway='true' />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-xs-12">
+                                            <label>Email</label>
+                                            <input type="text" class="form-control fc" placeholder="Enter your Mail-Box" db-check='mail' db-bind="Email" db-job="input" db-twoway='true' />
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+    </descriptor>>
+
+    <descriptor type="models.Mails" name="mails">
+        <template name="table">
+            <div class="panel panel-default" id="test">
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width:auto;max-width:100px">
+                                    Visited
+                                </th>
+                                <th>
+                                    From
+                                </th>
+                                <th>
+                                    To
+                                </th>
+                                <th>
+                                    Subject
+                                </th>
+                                <th>
+                                    Body
+                                </th>
+                                <th>
+                                    Target
+                                </th>
+                                <th>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody db-content></tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+    </descriptor>
+    <descriptor type="models.Client" name="Client">
+        <template name="info">
+            <div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="margin">
+                            <div class="row">
+                                <a class="btn btn-primary">
+                                    <h3 class="" db-bind="FullName" db-job="label" db-twoway="false">Karim Matmoure.</h3>
+                                </a>
+                            </div>
+                            <h4 class="row">
+                                <span class="glyphicon  glyphicon-phone"></span>
+                                <span db-bind='Tel' db-job="label" style="margin-left:15px"> 0541082226</span>
+                            </h4>
+                            <h4 class="row">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                                <span db-bind='Email' db-job="label" style="margin-left:15px">Qshop.Algerie@outlook.com</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <template name="edit">
+            <section>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="media block block-primary-head no-pad">
+                            <h3>
+                                <i class="fa fa-pencil glyphicon glyphicon-pencil h3i"></i>
+                                Personal Info
+                            </h3>
+                            <div class="block-content media-body">
+                                <form role="form">
+                                    <div class="row">
+                                        <div class="form-group col-xs-12">
+                                            <label>Cient Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter Nick Name" db-twoway='true' db-bind="Name" db-job='input' />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-xs-6">
+                                            <label>First Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter your First Name" db-check='name' db-twoway='true' db-bind="FirstName" db-job='input' />
+                                        </div>
+                                        <div class="form-group col-xs-6">
+                                            <label>Last Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter your Last Name" db-check='name' db-bind="LastName" db-job='input' db-twoway='true' />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-xs-12">
+                                            <label>Full Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter User Name" db-twoway='false' db-bind="FullName" db-job='rinput' readonly spellcheck="true" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-xs-12">
+                                            <label>Mobile</label>
+                                            <input type="text" class="form-control fc" placeholder="Enter your Mobile Number" db-check='tel' db-bind="Tel" db-job="input" db-twoway='true' />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-xs-12">
+                                            <label>Email</label>
+                                            <input type="text" class="form-control fc" placeholder="Enter your Mail-Box" db-check='mail' db-bind="Email" db-job="input" db-twoway='true' />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Activite</label>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="panel-group">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" db-cmd="accordion" target="1/#c1">
+                                                                <a data-toggle="collapse" class="collapsed" aria-expanded="false">
+                                                                    Etablissment
+                                                                    <span class="glyphicon glyphicon-copyright-mark pull-right"></span>
+                                                                </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="c1" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+
+
+
+                                                                <button type="button" class="btn btn-primary pull-right b" db-job='select' db-bind='Job' db-const='0' db-style='btn-primary'>Select</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" db-cmd="accordion" target="1/#c2">
+                                                                <a data-toggle="collapse" class="collapsed" aria-expanded="false">
+                                                                    Entrepreneur
+                                                                    <span class="glyphicon glyphicon-export pull-right"></span>
+                                                                </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="c2" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+
+
+
+                                                                <button type="button" class="btn btn-primary pull-right b" db-job='select' db-bind='Job' db-const='1' db-style='btn-primary'>Select</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" db-cmd="accordion" target="1/#c4">
+                                                                <a data-toggle="collapse" class="collapsed" aria-expanded="false">
+                                                                    Proffessional
+                                                                    <span class="glyphicon glyphicon-user pull-right"></span>
+                                                                </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="c4" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+
+
+
+                                                                <button type="button" class="btn btn-primary pull-right b" db-job='select' db-bind='Job' db-const='2' db-style='btn-primary'>Select</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" db-cmd="accordion" target="1/#c5">
+                                                                <a data-toggle="collapse" class="collapsed" aria-expanded="false">
+                                                                    Travaux Familiare
+                                                                    <span class="glyphicon glyphicon-home pull-right"></span>
+                                                                </a>
+
+                                                            </h4>
+                                                        </div>
+                                                        <div id="c5" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+
+
+
+                                                                <button type="button" class="btn btn-primary pull-right b" db-job='select' db-bind='Job' db-const='3' db-style='btn-primary'>Select</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" db-cmd="accordion" target="1/#c3">
+                                                                <a data-toggle="collapse" class="collapsed" aria-expanded="false">
+                                                                    Detail
+                                                                    <span class="glyphicon glyphicon-briefcase pull-right"></span>
+                                                                </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="c3" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+
+
+
+                                                                <button type="button" class="btn btn-primary pull-right b" db-job='select' db-bind='Job' db-const='4' db-style='btn-primary'>Select</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--<button type="button" db-job='dosave' class="btn btn-default pull-right b">Save</button>
+                                    <button type="button" db-job='dodiscart' class="btn btn-danger pull-right b">Discart</button>-->
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+    </descriptor>
+
+    <descriptor type="models.Facture" name="Facture">
+        <template name="Cart">
+            <div>
+                <div class="panel panel-primary" db-bind="" id="test">
+                    <div class="panel-heading">
+                        <div class="margin">
+                            <div class="row">
+                                <h3 class="" db-bind="Client.FullName" db-job="ilabel" db-twoway="false">Karim Matmoure.</h3>
+                            </div>
+                            <h4 class="row">
+                                <span class="glyphicon glyphicon-time"></span><span db-bind='DateLivraison' db-job="date" style="margin-left:15px"> 01/02/1992</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="panel-body panel-title">
+                        <div class="row">
+                            <div class="col col-xs-6">Date Command</div>
+                            <div class="col col-xs-6" db-bind="Date" db-job="date">12/8/2017</div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-xs-6">N° Articles</div>
+                            <div class="col col-xs-6" db-bind="NArticles" db-job="jobi">12 Articles</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">Mantant</div>
+                            <div class="col col-xs-6" db-bind="Total" db-job="price">17320.00 DZD</div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-xs-6">Versments</div>
+                            <div class="col col-xs-6" db-bind="Versments" db-job="totalarray">16000.00 DZD</div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-xs-6">Sold</div>
+                            <div class="col col-xs-6" id="r" db-bind='Sold' db-job="price">1320.00 DZD</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <template name="list">
+            <section item-template='Article.cart'>
+                <div style="margin: 40px 5px;" class="panel-group panel-primary" db-bind="SelectedFacture">
+                    <div class="panel-heading">
+                        <div class="margin" db-bind="Client">
+                            <div class="row">
+                                <a class="btn btn-primary" db-job="selectcostumer">
+                                    <h3 class="" db-bind="FullName" db-job="ilabel" db-twoway="false">Karim Matmoure.</h3>
+                                </a>
+                            </div>
+                            <h4 class="row">
+                                <span class="glyphicon glyphicon-phone-alt"></span>
+                                <span db-bind='Tel' db-job="label" style="margin-left:15px">Qshop.Algerie@outlook.com</span>
+                            </h4>
+                            <h4 class="row">
+                                <span class="glyphicon glyphicon-time"></span>
+                                <span db-bind='$qdata.SelectedFacture.DateLivraison' db-job="date" style="margin-left:15px"> 01/02/1992</span>
+                            </h4>
+
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel panel-default" id="test">
+                            <div class="panel-heading" db-cmd="accordion" target="#c1">
+                                <a data-toggle="collapse" class="text-left" style="width:100%">
+                                    <span class="glyphicon glyphicon-align-left glyphicon-info-sign"></span>
+                                    <p style="display:inline;margin-left:25px">Informations</p>
+                                </a>
+                            </div>
+                            <div class="panel-body panel-collapse collapse in" id="c1">
+
+                                <div class="row">
+
+                                    <div class="col col-xs-12 " db-bind="Date" db-job="$" db-twoway="true">the date is {{$value}}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-xs-6">Date Command</div>
+                                    <div class="col col-xs-6 " db-bind="Date" db-job="date">12/8/2017</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-xs-6">N° Articles</div>
+                                    <div class="col col-xs-6" db-bind="NArticles" db-job="jobi">12 Articles</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">Mantant</div>
+                                    <div class="col col-xs-6" db-bind="Total" db-job="price">17320.00 DZD</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-xs-6">Versments</div>
+                                    <div class="col col-xs-6" db-bind="Versments" db-job="totalarray">16000.00 DZD</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-xs-6">Sold</div>
+                                    <div class="col col-xs-6" id="r" db-bind='Sold' db-job="price">1320.00 DZD</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" id="test">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-align-center glyphicon-barcode"></span><p style="display:inline;margin-left:25px">Articles</p>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="width:auto;max-width:100px">
+                                            #
+                                        </th>
+                                        <th>
+                                            Article
+                                        </th>
+                                        <th>
+                                            Qte
+                                        </th>
+                                        <th>
+                                            Prix
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody db-content db-bind="Articles"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <h4 class="input-group-addon" style="font-size:large">
+                            <a class="btn" db-job='calctotal' style="font-size:large">Total </a>
+                            <span class="badge " db-job="label" db-bind='Total' style="font-size:large"></span>
+                        </h4>
+                    </div>
+
+                </div>
+            </section>
+        </template>
+        <template name="new">
+            <div class="ki">
+                <div class="kirow">
+                    <label class="kicnt kibtn">Transaction Type</label>
+                    <input class="kicnt kitext" db-bind="Transaction" db-job="enumoption" enum="models.TransactionType" db-twoway="true">
+                </div>
+                <div class="kirow">
+                    <label class="kicnt kibtn">Type</label>
+                    <input class="kicnt kitext" db-bind="Type" db-job="enumoption" enum="models.BonType" db-twoway="true">
+                </div>
+                <div class="kirow">
+                    <label class="kicnt kibtn">Abonment</label>
+                    <input class="kicnt kitext" db-bind="Abonment" db-job="enumoption" enum="models.Abonment" db-twoway="true">
+                </div>
+                <div class="kirow" style="margin-top: 0px;border: 1px solid #ccc;padding: 15px 0;margin: 0;border-bottom: 0px;background: #f1eded;padding-top: 1px;">
+                    <label class="kicnt kibtn" on-click="this.[:Forms.InitFacture].SelectClient">Client</label>
+                    <input class="kicnt kitext" db-bind="Client" db-job="autocomplet" db-source="$qdata.Costumers" bind-to-scop db-twoway="true" enum="models.TransactionType" db-twoway="true">
+                </div>
+                <div class="kirow" db-bind="Client" style="margin: 0;padding: 0;border: 1px solid #ccc;border-top: 0;background-color: #f1eded;">
+                    <div class="form-group col-xs-4">
+                        <text>Name</text>
+                        <text class="form-control" db-bind="Name" db-job="label"></text>
+                    </div>
+                    <div class="form-group col-xs-8">
+                        <text>FullName</text>
+                        <text class="form-control" db-bind="FullName" db-job="label"></text>
+                    </div>
+                </div>
+                <div class="kirow">
+                    <label class="kicnt kibtn">Observation</label>
+                    <textarea contenteditable="true" class="kicnt kitext kirichtext" db-job="input" placeholder="L'Observation est important'" db-bind="Client.Observation" db-twoway="true" db-check="text"></textarea>
+                </div>
+            </div>
+        </template>
+
+    </descriptor>
+
+    <descriptor type="models.Factures" name="Factures">
+        <template name="InValidation">
+            <div class="panel panel-default" id="test">
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width:auto;max-width:100px">
+                                    Ref
+                                </th>
+                                <th>
+                                    Date
+                                </th>
+                                <th>
+                                    FullName
+                                </th>
+                                <th>
+                                    N° Articles
+                                </th>
+                                <th>
+                                    Total
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody db-content></tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+    </descriptor>
+
+    <descriptor type="models.SFactures" name="SFactures">
+        <template name="table">
+            <div class="panel panel-default" id="test">
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Ref
+                                </th>
+                                <th>
+                                    Fournisseur
+                                </th>
+                                <th>
+                                    Date
+                                </th>
+                                <th>
+                                    n° Articles
+                                </th>
+                                <th>
+                                    Total
+                                </th>
+                                <th style="max-width:200px">
+                                    Observation
+                                </th>
+                                <th>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody db-content item-template="SFacture.row"></tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+    </descriptor>
+
+    <descriptor type="models.Products" name="Products">
+        <template name="table">
+            <div class="panel panel-default" id="test" item-template="Product.row">
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width:auto;max-width:100px" on-click="this.[:ProductsNav].__order.OrderByCategory">
+                                    Famille
+                                </th>
+                                <th  on-click="this.[:ProductsNav].__order.OrderByName">
+                                    Name
+                                </th>
+                                <th on-click="this.[:ProductsNav].__order.OrderByDimention">
+                                    Dimention
+                                </th>
+                                <th on-click="this.[:ProductsNav].__order.OrderBySerieName">
+                                    Serie Name
+                                </th>
+                                <th on-click="this.[:ProductsNav].__order.OrderByQuality">
+                                    Quality
+                                </th>
+
+                                <th on-click="this.[:ProductsNav].__order.OrderByQte">
+                                    Qte
+                                </th>
+                                <th on-click="this.[:ProductsNav].__order.OrderByPrice">
+                                    Prix
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody db-content></tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+        <template name="card">
+            <div>
+                <div class="content_area">
+                    <div class="grid-spaced" item-template="Product.DynCard1" db-content>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </descriptor>
+
+    <descriptor type="models.ii" name="iProduct">
+        <template name="edit">
+            <section>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="media block block-primary-head no-pad">
+                            <h3>
+                                <i class="fa fa-pencil glyphicon glyphicon-pencil h3i"></i>
+                                Product Info
+                            </h3>
+                            <div class="block-content media-body">
+                                <form role="form">
+                                    <div class="row">
+                                        <div class="form-group col-xs-6">
+                                            <label>Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter User Name" db-twoway='true' db-check='text' db-bind="Name" db-job='input' spellcheck="true" />
+                                        </div>
+
+                                        <div class="form-group col-xs-6">
+                                            <label>Dimention</label>
+                                            <input type="text" class="form-control" placeholder="Dimention" db-check='dimention' db-twoway='true' db-bind="Dimention" db-job='input' />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-xs-6">
+                                            <label>Serie Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter your Last Name" db-check='text' db-bind="SerieName" db-job='input' db-twoway='true' />
+                                        </div>
+                                        <div class="form-group col-xs-6 ">
+                                            <label>Famille</label>
+                                            <input type="text" autocomplete="off" class="form-control unborder" placeholder="Enter Nom Famille" db-job="auto-category" db-twoway="3" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-xs-6">
+                                            <label>Qte</label>
+                                            <input class="form-control fc" db-bind="Qte" db-job="number" db-twoway='true'>
+                                        </div>
+                                        <div class="form-group col-xs-6">
+                                            <label>Quality</label>
+                                            <select class="form-control fc" type="models.Quality" rtype='number' db-bind="Quality" db-job="enum" db-twoway='true'></select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-xs-12">
+                                            <label>Description</label>
+                                            <textarea type="text" class="form-control" placeholder="Enter your Last Name" db-bind="Description" db-job='input' db-twoway='true'></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title" db-cmd="accordion" target="1/#c1">
+                                        <a>
+                                            Price Info
+                                            <span class="glyphicon glyphicon-euro pull-right"></span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="c1" class="panel-collapse collapse">
+                                    <div class="panel-body" db-cmd="template" as="templates.priceEditor">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+
+    </descriptor>
+
+    <descriptor type="models.FakePrice" name="Price">
+        <template name="edit">
+            <section>
+                <div class="row" on-keydown="test">
+                    <div class="col-md-12">
+                        <div class="media block block-primary-head no-pad" style="padding: 2px; ">
+                            <h3>                                
+                                <i class="fa fa-pencil glyphicon glyphicon-pencil h3i"></i>
+                                Prices Editor                                
+                                <span style="float:right">
+                                    <span class="hidden" db-job="show" db-bind="Facture.IsOpen" target="1"></span>
+                                    <span class="dropdown" style="float:right">
+                                        <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" db-cmd="opendropdown">
+                                            &nbsp;Appliquer le &nbsp;&nbsp;
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="menu1">
+                                            <li class="dropdown-header">Choisir la method</li>
+                                            <li role="presentation">
+                                                <a role="menuitem" db-job="applyprice" method="moyen">Prix Moyen Pondere <span class="pull-right boldText">F5</span></a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a role="menuitem" db-job="applyprice" method="percent" class="disabled">Precentage<span class="pull-right boldText">F6</span></a>
+                                            </li>
+                                            <li role="presentation" class="divider"></li>
+                                            <li role="presentation">
+                                                <a role="menuitem" db-job="applyprice" method="new">Nouveau prix d'achat<span class="pull-right boldText">F7</span></a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a role="menuitem" db-job="applyprice" method="old">Ancien prix d'achat<span class="pull-right boldText">F8</span></a>
+                                            </li>
+                                            <li role="presentation" class="divider"></li>
+                                        </ul>
+                                    </span>
+                                    <span class="dropdown" style="float:right;padding:0px 10px">
+                                        <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" db-cmd="opendropdown">
+                                            &nbsp;Calculer &nbsp;&nbsp;
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul style="padding:0px 10px" class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="menu1">
+                                            <li class="dropdown-header">Choisir la method</li>
+                                            <li role="presentation">
+                                                <a role="menuitem" db-cmd="prdPrice" db-data="current">Ancien Prix <span class="pull-right boldText">F2</span></a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a role="menuitem" db-cmd="prdPrice" db-data="calc" class="disabled">Precentage <span class="pull-right boldText">F3</span></a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </span>
+                            </h3>
+                            <div class="block-content media-body" db-cmd="template" as="templates.priceEditor">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template name="info">
+            <div class="panel panel-success" id="test" style="min-width:900px">
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Fournisseur
+                                </th>
+                                <th>
+                                    Designation
+                                </th>
+                                <th>
+                                    Qte D'Achat
+                                </th>
+                                <th>
+                                    Prix D'Achat
+                                </th>
+                                <th>
+                                    Détaillant
+                                </th>
+                                <th>
+                                    Proffessional
+                                </th>
+
+                                <th>
+                                    Demi-Grossist
+                                </th>
+                                <th>
+                                    Grossist
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody db-content item-template="Price.price"></tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+    </descriptor>
+
+    <descriptor type="models.Tickets" name="Tickets">
+        <template name="table">
+            <!--<control db-control="adapter" db-bind="Values">-->
+            <div db-foreach="Values" class="panel panel-success" id="test" style="min-width:900px">
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Product Name
+                                </th>
+                                <!--<th>
+                                    Model
+                                </th>-->
+                                <th>
+                                    Prix Achat
+                                </th>
+                                <th>
+                                    Prix Vente
+                                </th>
+                                <th>
+                                    Qte
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody db-content>
+                            <template>
+                                <tr>
+                                    <td>
+                                        <label db-job="label" db-bind="Label"></label>
+                                    </td>
+                                    <!--<td>
+                                        <label db-job="enumoption" db-bind="Model" enum="models.TicketModels"></label>
+                                    </td>-->
+                                    <td>
+                                        <input db-job="number" db-bind="PrixAchat" class="form-control" db-twoway="true" min="0">
+                                    </td>
+                                    <td>
+                                        <input db-job="number" db-bind="PrixVent" class="form-control" db-twoway="true" min="0">
+                                    </td>
+                                    <td>
+                                        <input db-job="number" db-bind="Count" class="form-control" db-twoway="true" min="0">
+                                    </td>
+                                    <td><button>Reset</button></td>
+
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--</control>-->
+        </template>
+    </descriptor>
+
+    <descriptor type="models.Categories" name="Categories">
+        <template name="table">
+            <div class="panel panel-success" id="test">
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width:auto;max-width:100px">
+                                    Name
+                                </th>
+                                <th>
+                                    Base° 1
+                                </th>
+
+                                <th>
+                                    Base ° 2
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody db-content></tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+    </descriptor>
+    <descriptor type="models.Category" name="Category">
+        <template name="edit">
+            <section>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="media block block-primary-head no-pad">
+                            <h3>
+                                <i class="fa fa-pencil glyphicon glyphicon-pencil h3i"></i>
+                                Familles
+                            </h3>
+                            <div class="block-content media-body">
+                                <form role="form">
+                                    <div class="form-group form-control-static ">
+                                        <label>Sous-Famille</label>
+                                        <select class="form-control" db-twoway='true' db-bind="Base" db-job='selectcategory' spellcheck="true"></select>
+                                    </div>
+                                    <div class="form-group form-control-static ">
+                                        <label>Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter Nom Famille" db-twoway='true' db-check='name' db-bind="Name" db-job='input' spellcheck="true">
+                                    </div>
+                                    <div class="glyphicon icon-bar fa-line-chart"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+    </descriptor>
+    <descriptor type="models.FakePrices" name="FProducts">
+        <template name="table">
+            <div class="panel panel-success" id="test" style="min-width:900px">
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width:auto;max-width:100px">
+                                    Qte
+                                </th>
+                                <th style="width:60%">
+                                    Designation
+                                </th>
+
+                                <th>
+                                    Sel Price
+                                </th>
+
+                                <th>
+                                    Buy Price
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody db-content></tbody>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <div class=" row">
+                        <div class="col-md-4">
+                            <label class="kicnt">Date&emsp;&emsp;&emsp;</label>
+                            <input class="kicnt " type="date">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="kicnt">Sold&emsp;&emsp;&emsp;</label>
+                            <input class="kicnt" type="date">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="kicnt">Total&emsp;&emsp;&emsp;</label>
+                            <input class="kicnt" type="date">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </template>
+
+    </descriptor>
+
+
+    <descriptor type="models.SFacture" name="SFacture">
+        <template name="new">
+            <div class="ki">
+                <div class="kirow">
+                    <label class="kicnt kibtn">Transaction Type</label>
+                    <input class="kicnt kitext" db-bind="Transaction" db-job="enumoption" enum="models.FTransactionType" db-twoway="true">
+                </div>
+                <div class="kirow">
+                    <label class="kicnt kibtn">Type</label>
+                    <input class="kicnt kitext" db-bind="Type" db-job="enumoption" enum="models.BonType" db-twoway="true">
+                </div>
+                <div class="kirow">
+                    <label class="kicnt kibtn" on-click="[:Forms.InitSFacture].SelectFournisseur">Fournisseur</label>
+                    <input class="kicnt kitext" db-bind="Fournisseur" db-job="autocomplet" bind-to-scop db-twoway="true" db-source="$qdata.Fournisseurs">
+                </div>
+                <div class="kirow">
+                    <label class="kicnt kibtn" on-click="[:Forms.InitSFacture].SelectAchteur">Achteur</label>
+                    <input class="kicnt kitext" db-bind="Achteur"  db-job="autocomplet" bind-to-scop db-twoway="true" db-source="$qdata.Agents">
+                </div>
+            </div>
+        </template>
+
+        <template name="view">
+            <div class="panel panel-default" id="test" style="min-width:900px">
+                <div class="row panel-heading">
+                    <div class="form-group col-xs-3">
+                        <label>Fournisseur</label>
+                        <label db-bind="Fournisseur.Name" db-job="label" class="form-control"></label>
+                    </div>
+                    <div class="form-group col-xs-3">
+                        <label>Achter par</label>
+                        <label db-bind="Achteur.Name" db-job="label" class="form-control"></label>
+                    </div>
+                    <div class="form-group col-xs-3">
+                        <label>Editer par</label>
+                        <label db-bind="Editeur.Name" db-job="label" class="form-control"></label>
+                    </div>
+                    <div class="form-group col-xs-3">
+                        <label>Vaider par</label>
+                        <label db-bind="Validator.Name" db-job="label" class="form-control"></label>
+                    </div>
+
+                </div>
+                <div class="panel-body">
+
+                    <table class="table" db-bind="Articles">
+                        <thead>
+                            <tr>
+                                <th style="width:auto;max-width:100px">
+                                    Qte <text db-bind="Count" db-job="number"></text>
+                                </th>
+                                <th style="width:60%">
+                                    Designation
+                                </th>
+
+                                <th>
+                                    Sel Price
+                                </th>
+
+                                <th>
+                                    Buy Price
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody db-content item-template="FProduct.row"></tbody>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <div attach-SelectedItem db-bind="*SelectedItem">
+                        <div class="ki col-md-4 pull-left" style="margin:15px -15px" db-bind="Product.Revage" db-job="show" target="1">
+                            <div class="kirow">
+                                <label class="kicnt kibtn">Prix D'Achat</label>
+                                <label class="kicnt kitext" db-job="price" db-bind="PSel"></label>
+                            </div>
+                            <div class="kirow">
+                                <label class="kicnt kibtn">Prix Vent</label>
+                                <label class="kicnt kitext" db-job="price" db-filter="fackeprice:0">1</label>
+                            </div>
+                            <div class="kirow">
+                                <label class="kicnt kibtn">Quantity</label>
+                                <label class="kicnt kitext" db-job="number" db-bind="Qte">0.00</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="ki col-md-4 pull-right" style="margin:15px -15px">
+                        <div class="kirow">
+                            <label class="kicnt kibtn">Date</label>
+                            <input class="kicnt kitext" db-bind="Date" db-job="date" type="date">
+                        </div>
+                        <div class="kirow">
+                            <label class="kicnt kibtn" db-job="calctotal">Total</label>
+                            <label class="kicnt kitext" db-bind="Total" db-job="price">0.00</label>
+                        </div>
+                        <div class="kirow">
+                            <label class="kicnt kibtn">Sold</label>
+                            <label class="kicnt kitext" db-bind="Sold" db-job="price">0.00</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </descriptor>
+
+    <descriptor type="models.Facture" name="Facture">
+        <template name="oview">
+            <div class="panel panel-default" id="test" style="min-width:900px">
+                <div class="panel-body">
+                    <table class="table" db-bind="Articles">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">
+                                    Qte <span db-bind="Count" db-job="number"></span>
+                                </th>
+                                <th style="width:60%">
+                                    Designation
+                                </th>
+                                <th>
+                                    P.Achat
+                                </th>
+                                <th style="width:10%">
+                                    P.Vent
+                                </th>
+                                <th style="width:auto;max-width:35px">
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody db-content item-template="Article.orow"></tbody>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <div class="ki col-md-4 pull-right" style="margin:15px -15px">
+                        <div class="kirow">
+                            <label class="kicnt kibtn">Date</label>
+                            <input class="kicnt kitext" db-bind="Date" db-job="date" type="date">
+                        </div>
+                        <div class="kirow">
+                            <label class="kicnt kibtn" db-job="calctotal">Total</label>
+                            <label class="kicnt kitext" db-bind="Total" db-job="label">1</label>
+                        </div>
+                        <div class="kirow">
+                            <label class="kicnt kibtn" db-job="calctotal">Sold</label>
+                            <label class="kicnt kitext" db-job="number" db-bind="Sold">0.00</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </descriptor>
+
+    <descriptor type="models.Fournisseur" name="Fournisseur">
+        <template name="edit">
+            <section>
+                <div class="row">
+                    <div class="media block block-primary-head no-pad">
+                        <h3>
+                            <i class="fa fa-pencil h3i glyphicon glyphicon-pencil"></i>
+                            Fournisseur
+                        </h3>
+                        <div class="block-content media-body">
+                            <div role="form">
+                                <div class="form-group ">
+                                    <label>Name</label>
+                                    <input class="form-control fc" placeholder="Enter your Username" db-check='username' db-bind="Name" db-job='input' db-twoway="3" on-change="this.[UI.Modals.ModalEditer].Save" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Mobile</label>
+                                    <input type="text" class="form-control fc" placeholder="Enter your Mobile Number" db-check='tel' db-bind="Tel" db-job="input" db-twoway="3" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Mail-Box</label>
+                                    <input type="text" class="form-control fc" placeholder="Mail Box" db-check='mail' db-bind="Email" db-job="input" db-twoway="3" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Address</label>
+                                    <input type="text" class="form-control fc" placeholder="Address" db-check='text' db-bind="Address" db-job="input" db-twoway="3" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template name="table">
+            <div class="panel panel-default" id="test">
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th db-bind="this.toString" db-job="label">
+                                    #
+                                </th>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Tel
+                                </th>
+
+                                <th>
+                                    Total Vendus
+                                </th>
+                                <th>
+                                    Total Versments
+                                </th>
+                                <th>
+                                    Sold Total
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody db-content>
+                            <template>
+                                <tr db-job="openfournisseur">
+                                    <td style="width:0px;display:none;visibility:collapse" db-job="fournisseurStat" db-bind="SoldTotal"></td>
+                                    <td db-bind="Avatar" db-cmd='stop' db-job="avatar" db-twoway="false"></td>
+                                    <td db-bind="Name" db-job="label" db-twoway="false"></td>
+                                    <td db-bind="Tel" db-job="label" db-twoway="false"></td>
+                                    <td db-bind="MontantTotal" db-job="number" db-twoway="false"></td>
+                                    <td db-bind="VersmentTotal" db-job="number" db-twoway="false"></td>
+                                    <td db-bind="SoldTotal" db-job="number" db-twoway="false"></td>
+
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+    </descriptor>
+    <descriptor type="models.Costumers" name="Costumers">
+        <template name="table">
+            <div class="panel panel-default" id="test">
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width:0px;display:none;visibility:collapse"></th>
+                                <th  db-bind="this.toString" db-job="label">
+                                    #
+                                </th>
+                                <th>Fullname</th>
+                                <th>Tel</th>
+                                <th>
+                                    Total Vendus
+                                </th>
+                                <th>
+                                    Total Versments
+                                </th>
+                                <th>
+                                    Sold Total
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody db-content>
+                            <template>
+                                <tr db-job="opencostumer">
+                                    <td style="width:0px;display:none;visibility:collapse" db-job="clientStat" db-bind="SoldTotal"></td>
+                                    <td db-bind="Picture" db-job="avatar" db-twoway="false"></td>
+                                    <td db-bind="FullName" db-job="label" db-twoway="false"></td>
+                                    <td db-bind="Tel" db-job="label" db-twoway="false"></td>
+                                    <td db-bind="MontantTotal" db-job="number" db-twoway="false"></td>
+                                    <td db-bind="VersmentTotal" db-job="number" db-twoway="false"></td>
+                                    <td db-bind="SoldTotal" db-job="number" db-twoway="false"></td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+    </descriptor>
+    <descriptor type="models.Article" name="Article">
+        <template name="edit">
+            <section class="row">
+                <div class="media block block-primary-head no-pad">
+                    <h3>
+                        <i class="fa fa-pencil h3i glyphicon glyphicon-pencil"></i>
+                        Article
+                    </h3>
+                    <div class="block-content media-body">
+                        <div role="form">
+                            <span style="display:none" db-bind="this.[:UI.Modals.BasicModalEditor].IsEditable" db-job="readonly" target="1"></span>
+                            <div class="form-group " db-bind="Product">
+                                <label>Nom de Produit</label>
+                                <input db-job="auto-product" item-template="templates.prd-dtl" db-twoway="true" text-transform="uppercase" class="form-control unborder input" placeholder="Enter the Product Name">
+                                <label db-job="getLastArticleTransactioned"></label>
+                            </div>
+                            <div class="form-group ">
+                                <input db-job="TLabel" db-twoway="true" class="form-control unborder input" placeholder="Enter the Alternative Product Name">
+                            </div>
+                            <div class="text-center">
+                                <p style="color:gray">---------</p>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xs-6">
+                                    <label>Qte</label>
+                                    <input db-bind="Count" db-job="number" db-twoway="true" class="form-control unborder" placeholder="Qte">
+                                </div>
+
+                                <div class="form-group  col-xs-6">
+                                    <label>Qte Resté</label>
+                                    <label db-bind="Product.Qte" db-job="number" db-twoway="false" class="form-control unborder" readonly></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xs-6">
+                                    <label>Prix d'achat</label>
+                                    <label db-bind="PSel" db-job="number" db-twoway="false" class="form-control unborder"></label>
+                                </div>
+                                <div class="form-group  col-xs-6">
+                                    <label>Prix de vente</label>
+                                    <label db-bind="OPrice" db-job="number" db-twoway="false" readonly class="form-control unborder"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xs-6">
+                                    <label>Remise</label>
+                                    <input db-bind="Product" db-job="reduction" db-twoway="true" class="form-control unborder" placeholder="Remise">
+                                </div>
+                                <div class="form-group col-xs-6">
+                                    <label>Prix de vente (Avec Remise)</label>
+                                    <label db-bind="Price" db-job="number" db-twoway="false" class="form-control unborder" readonly></label>
+                                </div>
+                            </div>
+                            <div class="form-group float-rt">
+                                <button db-bind="Product" db-job="openfprice" db-twoway="false" type="button" autofocus="true" class="btn btn-sm btn-danger glyphicon glyphicon-usd pull-right"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+    </descriptor>
+    <descriptor type="models.SMS" name="SMS">
+        <template name="edit">
+            <section class="row">
+                <div class="media block block-primary-head no-pad">
+                    <h3>
+                        <i class="fa fa-pencil h3i glyphicon glyphicon-pencil"></i>
+                        SMS Composer
+                    </h3>
+                    <div class="block-content media-body">
+                        <div role="form">
+                            <span style="display:none" db-bind="this.[:UI.Modals.BasicModalEditor].IsEditable" db-job="readonly" target="1"></span>
+                            <div class="form-group ">
+                                <label>Reciever</label>
+                                <input  db-twoway="true" text-transform="uppercase" class="form-control unborder input" placeholder="Enter the reciever Name" 
+                                      db-job="autocomplet" db-source="$qdata.Costumers" db-bind="To"  bind-to-scop>
+                            </div>
+                            <div class="form-group ">
+                                <label>Title</label>
+                                <input db-job="input" db-bind="Title" db-check="text" db-twoway="true" class="form-control unborder input" placeholder="Enter the sms title">
+                            </div>
+                            <div class="text-center">
+                                <p style="color:gray">---------</p>
+                            </div>                            
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea contenteditable="true" class="form-control input" style="min-height:300px" db-job="input" placeholder="L'Observation est important'" db-bind="Message" db-twoway="true" db-check="text"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+    </descriptor>
+    <!--<descriptor type="models.FakePrice" name="Price">
+        <template name="edit">
+            <section class="row">
+                <div class="media block block-primary-head no-pad">
+                    <h3>
+                        <i class="fa fa-pencil h3i glyphicon glyphicon-pencil"></i>
+                        Article
+                    </h3>
+                    <div class="block-content media-body">
+                        <div role="form">
+                            <span style="display:none" db-bind="this.[:UI.Modals.BasicModalEditor].IsEditable" db-job="readonly" target="1"></span>
+                            <div class="form-group ">
+                                <label>Nom de Produit</label>
+                                <input db-bind="Product" db-job="auto-product" db-twoway="true" text-transform="uppercase" class="form-control unborder input" placeholder="Enter the Product Name">
+                            </div>
+                            <div class="text-center">
+                                <p style="color:red">~</p>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xs-6">
+                                    <label>Qte</label>
+                                    <input db-bind="Count" db-job="number" db-twoway="true" class="form-control unborder" placeholder="Qte">
+                                </div>
+
+                                <div class="form-group  col-xs-6">
+                                    <label>Qte Resté</label>
+                                    <label db-bind="Product.Qte" db-job="number" db-twoway="false" class="form-control unborder" readonly></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xs-6">
+                                    <label>Prix d'achat</label>
+                                    <label db-bind="Product.PSel" db-job="number" db-twoway="false" class="form-control unborder"></label>
+                                </div>
+                                <div class="form-group  col-xs-6">
+                                    <label>Prix</label>
+                                    <label db-bind="Product" db-job="number" db-twoway="false" readonly db-filter="fackeprice:0" class="form-control unborder"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xs-6">
+                                    <label>Prix de vente</label>
+                                    <label db-bind="Price" db-job="number" db-twoway="false" class="form-control unborder" readonly></label>
+                                </div>
+                            </div>
+                            <div class="form-group float-rt">
+                                <button db-bind="Product" db-job="openfprice" db-twoway="false" type="button" autofocus="true" class="btn btn-sm btn-danger glyphicon glyphicon-usd pull-right"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+    </descriptor>-->
+
+    <descriptor type="models.Agents" name="Agents">
+        <template name="table">
+            <div class="panel panel-default" id="test">
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Username
+                                </th>
+                                <th>
+                                    Fullname
+                                </th>
+                                <th>
+                                    Tel
+                                </th>
+
+                                <th>
+                                    Mail-Box
+                                </th>
+                                <th>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody db-content>
+                            <template>
+                                <tr db-twoway="0">
+                                    <td db-bind="Username" db-job="label" db-twoway="0"></td>
+                                    <td db-bind="Client.FullName" db-job="label" db-twoway="0"></td>
+                                    <td db-bind="Client.Tel" db-job="label" db-twoway="0"></td>
+                                    <td db-bind="Client.Email" db-job="label" db-twoway="0"></td>
+                                    <td style="max-width:75px">
+                                        <button type="button" db-bind='Client' db-twoway='0' db-job='openclient' class="btn b btn-default pull-right">Edit</button>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+
+    </descriptor>
+    <descriptor name="Agent" type="models.Agent">
+        <template name="edit">
+            <section>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="media block block-primary-head no-pad">
+                            <h3>
+                                <i class="fa fa-pencil glyphicon glyphicon-pencil h3i"></i>
+                                Agent Editor
+                            </h3>
+                            <div class="block-content media-body">
+                                <div role="form">
+                                    <div class="form-group form-control-static ">
+                                        <label>Full Name</label>
+                                        <div class="kirow">
+                                            <label class="kicnt kitext" style="float:left" db-bind="Client.FullName" db-job="label" db-twoway="true"></label>
+                                            <button class="kicnt kibtn" db-bind="Client" db-job="selectclient" db-twoway="true">Select</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Agent Nickname</label>
+                                        <input type="text" class="form-control" placeholder="Enter Nickname" db-check='username' db-twoway='true' db-bind="Name" db-job='input' />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Username</label>
+                                        <input type="text" class="form-control" placeholder="Enter UserName" db-check='username' db-twoway='true' db-bind="Username" db-job='input' />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="text" class="form-control" placeholder="Password" db-check='password' db-twoway='true' db-bind="Pwd" db-job='input' />
+                                    </div>
+                                    <div class="glyphicon icon-bar fa-line-chart">~</div>
+                                    <div class="form-group">
+                                        <label>IsDisponible</label>
+                                        <input db-job="checkbox" type="checkbox" class="form-control" db-twoway='3' db-bind="IsDisponible" />
+                                    </div>
+                                    <div class="form-group" contenteditable="false">
+                                        <label>Permissions</label>
+                                        <input class="form-control fc" db-bind="Permission" db-twoway="true" db-job="enumoption" enum="models.AgentPermissions" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+    </descriptor>
+    <descriptor name="tabcontrol" type="UI.TabControl">
+        <template name="navTabsItem">
+            <ul class="nav nav-tabs" db-content>
+                <template>
+                    <li>
+                        <a data-toggle="tab">
+                            <text db-bind="Title" db-job="label"></text>
+                            <span class="glyphicon glyphicon-remove-circle closeBTNStyle" on-click='this.[:UI.TabControl].CloseTab'></span>
+                        </a>
+                    </li>
+                </template>
+            </ul>
+        </template>
+    </descriptor>
+    <descriptor name="unitabcontrol" type="UI.UniTabControl">
+        <template name="navTabsItem">
+            <ul class="nav nav-tabs" db-content>
+                <template>
+                    <li>
+                        <a data-toggle="tab">
+                            <text db-bind="Title" db-job="label"></text>
+                            <span class="glyphicon glyphicon-remove-circle closeBTNStyle" on-click='this.[:UI.UniTabControl].CloseTab'></span>
+                        </a>
+                    </li>
+                </template>
+            </ul>
+        </template>
+    </descriptor>
+    <!--http://freefrontend.com/css-cards/-->
+    <descriptor type="bind.DObject" name="templates">
+        <template name="PDFViewer">
+            <section>
+                <div class="row" style="position: absolute;">
+                    <button class="glyphicon glyphicon-refresh" style="float: right;padding: 7px;margin: 5px;" on-click="this.[:Forms.PDFViewer].Refech"></button>
+                </div>
+                <div class="row">
+                    <embed db-name="pdfDom" style="width:100%;height:80vh" db-name="plugin" type="application/pdf" />
+                </div>
+            </section>
+        </template>
+    </descriptor>
+    <require module="style|../cards.css"></require>
+    <descriptor type="models.Product" name="Product">
+        <template name="DynCard1">
+            <div class="example-1 card col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="wrapper" db-exec="Picture->#image">
+                    <div db-bind="CurrentArticle" db-job="show" target="0" style="vertical-align: middle;position: absolute;width: 100%;height: 80%;text-align: center;font-size: 100px;" class="trade-color">
+                        <text db-bind="Count" db-job="number" style="  align-content: center;  width: 100%;  height: 100%;  display: grid;">
+                            8
+                        </text>
+                    </div>
+
+                    <div class="date">
+                        <span class="day" db-bind="Qte" db-label="number">12</span>
+                        <span class="month" db-bind="Value" db-label="price">0.00 DZD</span>
+                        <span class="year" db-bind="Category.Name" db-label="label">Famille</span>
+                    </div>
+                    <div class="data">
+                        <div class="content">
+                            <span class="author" db-bind="SerieName" db-job="label">Category</span>
+                            <h1 class="title">
+                                <a href="#">
+                                    <text db-bind="Name" db-job="label"></text>
+                                    <text db-bind="Dimention" db-job="label"></text>
+                                </a>
+                            </h1>
+                            <p class="text" db-bind="Description" db-job="label">Olympic gold medals contain only about 1.34 percent gold, with the rest composed of sterling silver.</p>
+                            <label class="menu-button" target="1/#show-menu" db-cmd="checkboxTrigger"><span></span></label>
+                        </div>
+                        <input type="checkbox" id="show-menu" />
+                        <ul class="menu-content">
+                            <content db-exec="$modify->showIf" style="display:none" target="1"></content>
+                            <li>
+                                <a href="#" class="fa" db-job="prod-add">
+                                    <text db-bind="CurrentArticle.Count" db-job="number">
+                                        23
+                                    </text>
+                                </a>
+                            </li>
+                            <li><a href="#" class="glyphicon glyphicon-plus" db-job="prod-plus"></a></li>
+                            <li><a href="#" class="glyphicon glyphicon-minus" db-job="prod-minus"></a></li>
+                            <li><a href="#" class="glyphicon glyphicon-trash" db-job="prod-remove"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <template name="card">
+            <div class="demo-preview icon-block icon-block-pivot">
+                <div>
+                    <span class="tool-item-icon ico-b-pivot" db-bind="Picture" db-job="image">
+                        <span db-bind="^CurrentArticle.Count" db-job="trade" class="trade-color" <!--style="color:rgba(196, 197, 222, 0.62)"--> ></span>
+                    </span>
+                    <span class="line1" db-bind="Name" db-job="label">Pivot</span>
+
+                    <span class="line2">
+                        <span class="bottom-link-widget">
+                            <span style="float:left">Dimention</span>
+                            <span style="float:right" db-bind="Dimention" db-job="label">129899.00 $</span>
+                        </span>
+                        <span class="bottom-link-widget">
+                            <span style="float:left">Serie</span>
+                            <span style="float:right" db-bind="SerieName" db-job="label">129899.00 $</span>
+                        </span>
+                        <span class="bottom-link-widget">
+                            <span style="float:left">Famille</span>
+                            <span style="float:right" db-bind="Category.Name" db-job="label">129899.00 $</span>
+                        </span>
+                        <span class="bottom-link-widget">
+                            <span style="float:left">Price</span>
+                            <span style="float:right" db-bind="." db-job="prodprice">129899.00 $</span>
+                        </span>
+                        <span class="bottom-link-widget boldText">
+                            <span style="float:left">Avaible</span>
+                            <span style="float:right" db-bind="Qte" db-job="number">000</span>
+                        </span>
+                        <span class="bottom-link-widget1" style="padding-top:5px">
+                            <span style="float:right" style="color:#333;">
+                                <span db-bind='$modify' db-job="showIf" style="display:none"></span>
+                                <span class="ii glyphicon glyphicon-open" db-job="prod-add"></span>
+                                <span class="ii glyphicon glyphicon-plus-sign" db-job="prod-plus"></span>
+                                <span class="ii glyphicon glyphicon-minus-sign" db-job="prod-minus"></span>
+                                <span class="ii glyphicon glyphicon-remove-circle" db-job="prod-remove"></span>
+                            </span>
+                            <span class="pull-left" style="font-weight:100" db-bind="Quality" db-job="rateing"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </template>
+    </descriptor>
+    <descriptor type="bind.DObject" name="templates">
+        <template name="ProductSearch">
+            <section>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="media block block-primary-head no-pad">
+                            <h3>
+                                <i class="fa fa-search glyphicon glyphicon-search h3i"></i>
+                                Statiqtique/Recherche
+                            </h3>
+                            <div class="block-content media-body">
+                                <form role="form">
+                                    <div class="row">
+                                        <div class="form-group col-xs-12">
+                                            <label>Nom Cient</label>
+                                            <input type="text" class="form-control" placeholder="Nom de client" db-name="dealer" db-job='autocomplet' db-source='$qdata.Costumers' db-bind='SelectedDealer' db-twoway='true' bind-to-scop/>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-xs-12">
+                                            <label>Produit</label>
+                                            <input type="text" class="form-control" placeholder="Produit désignation" db-name="product" db-job="autocomplet" db-source= "$qdata.Products"  db-bind="SelectedProduct"  db-twoway="true"  bind-to-scop/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <span class="row">Periode de validation</span>
+                                        <div class="form-group col-xs-6">
+                                            <label> De</label>
+                                            <input type="date" class="form-control" db-twoway='true' db-bind="From" db-job='date' db-name="from" />
+                                        </div>
+                                        <div class="form-group col-xs-6">
+                                            <label>à</label>
+                                            <input type="date" class="form-control" db-twoway='true' db-bind="To" db-job='date' db-name="to"/>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </template>
+        <template name="ProductSearch1">
+            <section>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="media block block-primary-head no-pad">
+                            <h3>
+                                <i class="fa fa-search glyphicon glyphicon-search h3i"></i>
+                                Statiqtique/Recherche
+                            </h3>
+                            <div class="block-content media-body">
+                                <form role="form">
+                                    <div class="row">
+                                        <div class="form-group col-xs-12">
+                                            <label>Nom Fournisseur</label>
+                                            <input type="text" class="form-control" placeholder="Nom de Fournisseur" db-name="dealer" db-job="autocomplet" db-source="$qdata.Fournisseurs" db-bind="SelectedDealer" db-twoway="true" bind-to-scop />
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-xs-12">
+                                            <label>Produit</label>
+                                            <input type="text" class="form-control" placeholder="Produit désignation" db-name="product" db-job="autocomplet" db-source="$qdata.Products" db-bind="SelectedProduct" db-twoway="true" bind-to-scop />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <span class="row">Periode de validation</span>
+                                        <div class="form-group col-xs-6">
+                                            <label> De</label>
+                                            <input type="date" class="form-control" db-twoway='true' db-bind="From" db-job='date' db-name="from" />
+                                        </div>
+                                        <div class="form-group col-xs-6">
+                                            <label>à</label>
+                                            <input type="date" class="form-control" db-twoway='true' db-bind="To" db-job='date' db-name="to" />
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </template>
+        <template name="listOfSites">
+            <section>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="media block block-primary-head no-pad">
+                            <h3>
+                                <i class="fa fa-search glyphicon glyphicon-search h3i"></i>
+                                Choisir le site
+                            </h3>
+                            <div class="block-content media-body">
+                                <form role="form">
+                                    <div class="form-group form-control-static ">
+                                        <label>Sous-Famille</label>
+                                        <input autocomplete="on" type="url"  placeholder="Entrer le site" class="form-control" db-twoway='true' db-bind="Url" autofocus  db-job='input' spellcheck="true">
+                                    </div>
+                                    <div class="glyphicon icon-bar fa-line-chart"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+    </descriptor>
+
+
+
+    <descriptor type="models.Picture" name="Picture">
+        <template name="edit">
+            <section style="min-height:60vh; overflow:visible; display:block; position:static;">
+                <div class="img-container" >
+                    <img id="img" db-name="_img" src="./assets/img/2.png" alt="Avatar" class="img-image">
+                    <div class="img-overlay">
+                        <div class="img-text">
+                            <label class="btn btn-danger" for="Upload">
+                                Sélectionner une image
+                            </label>
+                            <input id="Upload" db-name="_btn" on-change="this.[:PictureEditor].OnImageSubmit" db-job="SelectImage" target="3/img" style="visibility: hidden;display:none;" db-bind="Adapter.SelectedItem.Picture" db-twoway="true">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+        
+    </descriptor>
+
+
+
+</templates>

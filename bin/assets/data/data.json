@@ -1,0 +1,880 @@
+﻿{
+  "CommandDef": {
+    "def": [
+      {
+        "Header": {
+          "Content": "Produit",
+          "OrderBy": "Product"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Label",
+            "db-job": "label",
+            "db-twoway": false
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Content": "Fournisseur",
+          "Order": "Fournisseur"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Fournisseur",
+            "db-job": "label",
+            "db-twoway": false,
+            "text-transform": "uppercase"
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Content": "Qte",
+          "OrderBy": "Qte"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Qte",
+            "db-job": "number",
+            "db-twoway": false
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Prix",
+          "OrderBy": "Price"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Price",
+            "db-job": "number",
+            "db-twoway": false
+          }
+        }
+      },
+      {
+        "Header": {
+          "Attributes": {
+            "db-bind": "this.[:views.Command].Value.Articles.Count",
+            "db-job": "number"
+          }
+        },
+        "Cell": {
+          "Content": "<button on-click='this.[:views.Command].OpenInfo'> C </button><sepation/><button on-click='this.[:views.Command].OpenInfo'> E </button>",
+          "ContentAsHtml": true
+        }
+      }
+    ],
+    "visibleCol": null
+  },
+  "ProductStatDef": {
+    "def": [
+      {
+        "Header": {
+          "Content": "Nom Produit",
+          "Attributes": {
+            "on-click": "this.[:Statistique.Views.ListOfArticles].OrderByProduct"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Product",
+            "db-job": "label",
+            "db-twoway": false
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Content": "Nom Client",
+          "Attributes": {
+            "db-bind": "this.[:Statistique.Views.ListOfArticles].DealerTitle",
+            "db-job": "label",
+            "on-click": "this.[:Statistique.Views.ListOfArticles].OrderByDealer"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Owner.Client.Name",
+            "db-job": "label",
+            "db-twoway": false
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Content": "Qte",
+          "Attributes": {
+            "on-click": "this.[:Statistique.Views.ListOfArticles].OrderByQte"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Count",
+            "db-job": "number",
+            "db-twoway": false
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Content": "Prix Achat",
+          "Attributes": {
+            "on-click": "this.[:Statistique.Views.ListOfArticles].OrderByPSel"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "PSel",
+            "db-job": "number",
+            "db-twoway": false
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Content": "Prix Vente",
+          "Attributes": {
+            "on-click": "this.[:Statistique.Views.ListOfArticles].OrderByPVente"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Price",
+            "db-job": "number",
+            "db-twoway": false
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Content": "Saisir Le",
+          "Attributes": {
+            "on-click": "this.[:Statistique.Views.ListOfArticles].OrderByModifiedDate"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "LastModified",
+            "db-job": "cdate",
+            "db-twoway": false,
+            "type": "date"
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Content": "Acheter Le",
+          "Attributes": {
+            "on-click": "this.[:Statistique.Views.ListOfArticles].OrderByFactureDate"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Owner.Date",
+            "db-job": "date",
+            "db-twoway": false,
+            "type": "date"
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Attributes": {
+            "db-bind": "this.[:Statistique.Views.ListOfArticles].Input.Count",
+            "db-job": "number"
+          }
+        },
+        "Cell": {
+          "Content": "<button on-click='this.[:Statistique.Views.ListOfArticles].OpenFacture'>Open</button>",
+          "ContentAsHtml": true
+        },
+        "editable": false
+      }
+    ]
+  },
+  "ProductStatDef1": {
+    "def": [
+      {
+        "Header": {
+          "Content": "Nom Produit",
+          "Attributes": {
+            "on-click": "this.[:Statistique.Views.ListOfFakePrices].OrderByProduct"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Product",
+            "db-job": "label",
+            "db-twoway": false
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Content": "Fournisseur",
+          "Attributes": {
+            "on-click": "this.[:Statistique.Views.ListOfFakePrices].OrderByDealer"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Facture.Fournisseur.Name",
+            "db-job": "label",
+            "db-twoway": false
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Content": "Qte",
+          "Attributes": {
+            "on-click": "this.[:Statistique.Views.ListOfFakePrices].OrderByQte"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Qte",
+            "db-job": "number",
+            "db-twoway": false
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Content": "Prix Achat",
+          "Attributes": {
+            "on-click": "this.[:Statistique.Views.ListOfFakePrices].OrderByPSel"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "PSel",
+            "db-job": "number",
+            "db-twoway": false
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Content": "Prix Vente",
+          "Attributes": {
+            "on-click": "this.[:Statistique.Views.ListOfFakePrices].OrderByPVente"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Value",
+            "db-job": "number",
+            "db-twoway": false
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Content": "Saisir Le",
+          "Attributes": {
+            "on-click": "this.[:Statistique.Views.ListOfFakePrices].OrderByModifiedDate"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "LastModified",
+            "db-job": "cdate",
+            "db-twoway": false,
+            "type": "date"
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Content": "Acheter Le",
+          "Attributes": {
+            "on-click": "this.[:Statistique.Views.ListOfFakePrices].OrderByFactureDate"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Facture.Date",
+            "db-job": "date",
+            "db-twoway": false,
+            "type": "date"
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Attributes": {
+            "db-bind": "this.[:Statistique.Views.ListOfFakePrices].Input.Count",
+            "db-job": "number"
+          }
+        },
+        "Cell": {
+          "Content": "<button on-click='this.[:Statistique.Views.ListOfFakePrices].OpenFacture'>Open</button>",
+          "ContentAsHtml": true
+        },
+        "editable": false
+      }
+    ]
+  },
+  "ticketTableDef": {
+    "def": [
+
+      {
+        "Header": "Nom Produit",
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Label",
+            "db-job": "input",
+            "db-check": "text",
+            "db-twoway": true
+          }
+        },
+        "editable": true
+      },
+      {
+        "Header": "Prix Achat",
+        "Cell": {
+          "Attributes": {
+            "db-bind": "PrixAchat",
+            "db-job": "number",
+            "db-twoway": true
+          }
+        },
+        "editable": true
+      },
+      {
+        "Header": "Prix Vente",
+        "Cell": {
+          "Attributes": {
+            "db-bind": "PrixVent",
+            "db-job": "number",
+            "db-twoway": true
+          }
+        },
+        "editable": true
+      },
+      {
+        "Header": "Qte",
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Count",
+            "db-job": "number",
+            "db-twoway": true
+          }
+        },
+        "editable": true
+      }
+    ]
+  },
+
+  "clientTable": {
+    "def": [
+      {
+        "Header": {
+          "Content": "#",
+          "OrderBy": "Ref",
+          "Attributes": {
+            "style": "width:25px;padding:5px",
+            "db-set": "this->$window.clientView"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Picture",
+            "db-job": "avatar",
+            "style": "width:25px;padding:5px"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Client",
+          "OrderBy": "FName"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "FullName",
+            "db-job": "label"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Tel",
+          "OrderBy": "Tel"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Tel",
+            "db-job": "label"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Total Vendus",
+          "OrderBy": "TotalM"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "MontantTotal",
+            "db-job": "number"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Total Versments",
+          "OrderBy": "TotalV"
+
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "VersmentTotal",
+            "db-job": "number"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Sold Total",
+          "OrderBy": "TotalS"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "SoldTotal",
+            "db-job": "number"
+          }
+        }
+      }
+    ],
+    "visibleCol": null
+  },
+  "fournisseurTable": {
+    "def": [
+      {
+        "Header": {
+          "Content": "#",
+          "OrderBy": "Id",
+          "Attributes": {
+            "style": "width:25px;padding:5px"
+          }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Avatar",
+            "db-job": "Avatar",
+            "style": "width:25px;padding:5px"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Fournisseur",
+          "OrderBy": "Name"
+
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Name",
+            "db-job": "label"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Tel",
+          "OrderBy": "Tel"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Tel",
+            "db-job": "label"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Total Achats",
+          "OrderBy": "TotalM"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "MontantTotal",
+            "db-job": "number"
+          }
+        },
+        "editable": true
+      },
+      {
+        "Header": {
+          "Content": "Total Versments",
+          "OrderBy": "TotalV"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "VersmentTotal",
+            "db-job": "number"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Sold Total",
+          "OrderBy": "TotalS"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "SoldTotal",
+            "db-job": "number"
+          }
+        }
+      }
+    ],
+    "visibleCol": null
+  },
+  "factureAchatTable": {
+    "def": [
+      {
+        "Header": {
+          "Content": "Ref",
+          "OrderBy": "Ref"
+        },
+
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Ref",
+            "db-job": "label"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Fournisseur",
+          "OrderBy": "Fournisseur"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Fournisseur.Name",
+            "db-job": "label"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Date",
+          "OrderBy": "Date"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Date",
+            "db-job": "date"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "N° Articles",
+          "OrderBy": "NArticles"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "NArticles",
+            "db-job": "number"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Montant",
+          "OrderBy": "Montant"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Total",
+            "db-job": "price"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Stat",
+          "OrderBy": "Stat",
+          "Attribute": {
+            "style": "width:25px;padding:5px;"
+          }
+        },
+        "Cell": {
+          "attribute": {
+            "style": "width:25px;padding:5px;padding:0"
+          },
+          "Content": "<span class=\"pull-right activeShadow glyphicon glyphicon-check\" style=\"margin-left:5px;margin-right:5px\" db-job=\"show\" db-bind=\"IsValidated\" target=\"0\" db-data=\"none,\"></span><span class=\"pull-right glyphicon glyphicon-record\" style=\"margin-left: 5px; margin-right: 5px\" db-job=\"show\" db-bind=\"IsOpen\" target=\"0\" db-data=\"none,\"></span>",
+          "ContentAsHtml": true
+        }
+      },
+      {
+        "Header": {
+          "Content": "Observation",
+          "OrderBy": "Observation"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Observation",
+            "db-job": "label",
+            "style": "max-width:25px;padding:5px"
+
+          }
+        }
+      }
+
+    ]
+  },
+  "factureVenteTable": {
+    "def": [
+      {
+        "Header": {
+          "Content": "Ref",
+          "OrderBy": "Ref"
+        },
+
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Ref",
+            "db-job": "label"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Client",
+          "OrderBy": "Client"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Client.FullName",
+            "db-job": "label"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Date",
+          "OrderBy": "Date"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Date",
+            "db-job": "date",
+            "db-twoway": false
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "N° Articles",
+          "OrderBy": "NArticles"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "NArticles",
+            "db-job": "number"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Montant",
+          "OrderBy": "Montant"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Total",
+            "db-job": "price"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Stat",
+          "OrderBy": "Stat",
+          "Attribute": {
+            "style": "width:25px;padding:5px;"
+          }
+        },
+        "Cell": {
+          "attribute": {
+            "style": "width:25px;padding:5px;padding:0"
+          },
+          "Content": "<span class=\"pull-right activeShadow glyphicon glyphicon-check\" style=\"margin-left:0px;margin-right:0px\" db-job=\"show\" db-bind=\"IsValidated\" target=\"0\" db-data=\"none,\"></span><span class=\"pull-right glyphicon glyphicon-record\" style=\"margin-left: 5px; margin-right: 5px\" db-job=\"show\" db-bind=\"IsOpen\" target=\"0\" db-data=\"none,\"></span>",
+          "ContentAsHtml": true
+        }
+      },
+      {
+        "Header": {
+          "Content": "Observation",
+          "OrderBy": "Observation"
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Observation",
+            "db-job": "label"
+          }
+        }
+      }
+    ]
+  },
+
+  "smsTable": {
+    "def": [
+      {
+        "Header": {
+          "Content": "#",
+          "OrderBy": "IsReaded",
+          "Attributes": { "style": "width:1px;max-width:1em" }
+        },
+
+        "Cell": {
+          "Attributes": {
+            "db-bind": "IsReaded",
+            "db-job": "smsState",
+            "style": "width:1px;max-width:1em"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "From",
+          "OrderBy": "From",
+          "Attributes": { "style": "width:1px;min-width:10em" }
+        },
+
+        "Cell": {
+          "Attributes": {
+            "db-bind": "From.FullName",
+            "db-job": "label",
+            "style": "width:1px;min-width:10em"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "To",
+          "OrderBy": "To",
+          "Attributes": { "style": "width:1px;min-width:10em" }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "To.FullName",
+            "db-job": "label",
+            "style": "width:1px;min-width:10em"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Date",
+          "OrderBy": "Date",
+          "Attributes": { "style": "width:1px" }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Date",
+            "db-job": "date",
+            "style": "width:1px"
+          }
+        }
+      },
+      {
+        "Header": {
+          "Content": "Title",
+          "OrderBy": "Title",
+          "Attributes": { "style": "width:1px;min-width:10em" }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Title",
+            "db-job": "input",
+            "db-twoway": true,
+            "style": "width:1px;min-width:10em"
+          }
+        },
+        "editable": false
+      },
+      {
+        "Header": {
+          "Content": "Message",
+          "OrderBy": "Message",
+          "Attributes": { "style": "width:1px;min-width:10em" }
+        },
+        "Cell": {
+          "Attributes": {
+            "db-bind": "Message",
+            "db-job": "input",
+            "db-twoway": true
+          }
+        },
+        "editable": false
+      }
+    ]
+  },
+
+  "FilePermissionsTable": {
+    "def": [
+      {
+        "Header": {
+          "Content": "Client",
+          "OrderBy": "Client"
+        },
+
+        "Cell": {
+          "Content": "<input type='text' db-job='autocomplet' db-source='$qdata.Costumers' db-bind='Client' db-twoway='true' bind-to-scop >",
+          "ContentAsHtml": true
+        }
+      },
+      {
+        "Header": {
+          "Content": "Permission",
+          "OrderBy": "Permission"
+        },
+
+        "Cell": {
+          "Content": "<input db-bind='Permission' db-job='enumoption' enum='models.Permission' db-twoway='true' >",
+          "ContentAsHtml": true
+        }
+      },
+      {
+        "Header": "#",
+        "Cell": {
+          "Content": "<button class='btn btn-table' on-click='this.[:PermissionsTable].SavePermission'>Save</label>",
+          "ContentAsHtml": true
+        }
+      },
+      {
+        "Header": "$",
+        "Cell": {
+          "Content": "<button class='btn btn-table' on-click='this.[:PermissionsTable].DeletePermission'>Delete</label>",
+          "ContentAsHtml": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "amd",
+    "noEmitOnError": false,
+    "noImplicitAny": false,
+    "outFile": "./bin/e-shop.js",
+    "removeComments": true,
+    "sourceMap": false,
+    "target": "es5",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": false
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot",
+    "bin"
+  ]
+}

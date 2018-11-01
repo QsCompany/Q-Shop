@@ -1,0 +1,1023 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <UseGlobalApplicationHostFile />
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <ProjectGuid>{14FE13FE-E350-46FD-9FBA-1A1BCF391A47}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+    <TypeScriptOutFile>./bin/qinf.js</TypeScriptOutFile>
+    <TypeScriptOutDir>
+    </TypeScriptOutDir>
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot>
+    </TypeScriptMapRoot>
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="abstract\adminModels.ts" />
+    <TypeScriptCompile Include="abstract\Apis\Agent.ts" />
+    <TypeScriptCompile Include="abstract\Apis\Article.ts" />
+    <TypeScriptCompile Include="abstract\Apis\Category.ts" />
+    <TypeScriptCompile Include="abstract\Apis\Client.ts" />
+    <TypeScriptCompile Include="abstract\Apis\FactureAchat.ts" />
+    <TypeScriptCompile Include="abstract\Apis\FactureVent.ts" />
+    <TypeScriptCompile Include="abstract\Apis\FakePrice.ts" />
+    <TypeScriptCompile Include="abstract\Apis\Fournisseur.ts" />
+    <TypeScriptCompile Include="abstract\Apis\Product.ts" />
+    <TypeScriptCompile Include="abstract\Apis\Projet.ts" />
+    <TypeScriptCompile Include="abstract\Apis\Revage.ts" />
+    <TypeScriptCompile Include="abstract\Apis\SVersment.ts" />
+    <TypeScriptCompile Include="abstract\Apis\Versment.ts" />
+    <TypeScriptCompile Include="abstract\extra\AdminApis.ts" />
+    <TypeScriptCompile Include="abstract\extra\Basics.ts" />
+    <TypeScriptCompile Include="abstract\extra\Common.ts" />
+    <TypeScriptCompile Include="abstract\extra\ShopApis.ts" />
+    <TypeScriptCompile Include="abstract\Models.ts" />
+    <TypeScriptCompile Include="abstract\Printing.ts" />
+    <TypeScriptCompile Include="abstract\QShopApis.ts" />
+    <TypeScriptCompile Include="abstract\Services.ts" />
+    <TypeScriptCompile Include="Apps\Calculator\Calc.ts" />
+    <TypeScriptCompile Include="Apps\Login.ts" />
+    <TypeScriptCompile Include="assets\data\data.ts" />
+    <TypeScriptCompile Include="Componenets\Forms.ts" />
+    <TypeScriptCompile Include="Componenets\PStat.ts" />
+    <TypeScriptCompile Include="Desktop\AdminPage.ts" />
+    <TypeScriptCompile Include="Desktop\Admin\Agents.ts" />
+    <TypeScriptCompile Include="Desktop\Admin\Categories.ts" />
+    <TypeScriptCompile Include="Desktop\Admin\Command.ts" />
+    <TypeScriptCompile Include="Desktop\Admin\Costumers.ts" />
+    <TypeScriptCompile Include="Desktop\Admin\Facture.ts" />
+    <TypeScriptCompile Include="Desktop\Admin\FacturesNonValider.ts" />
+    <TypeScriptCompile Include="Desktop\Admin\Fournisseurs.ts" />
+    <TypeScriptCompile Include="Desktop\Admin\ListOfFactures.ts" />
+    <TypeScriptCompile Include="Desktop\Admin\Logins.ts" />
+    <TypeScriptCompile Include="Desktop\Admin\Products.ts" />
+    <TypeScriptCompile Include="Desktop\Admin\Revages.ts" />
+    <TypeScriptCompile Include="Desktop\Apps.ts" />
+    <TypeScriptCompile Include="Desktop\Jobs.ts" />
+    <TypeScriptCompile Include="Desktop\Main.ts" />
+    <TypeScriptCompile Include="Desktop\ModelsViews.ts" />
+    <TypeScriptCompile Include="Desktop\Pages.ts" />
+    <TypeScriptCompile Include="Desktop\Search.ts" />
+    <TypeScriptCompile Include="Desktop\Services\QServices.ts" />
+    <TypeScriptCompile Include="Desktop\SMS.ts" />
+    <TypeScriptCompile Include="Idea\FileManager.ts" />
+    <TypeScriptCompile Include="lib\Chart.bundle.d.ts" />
+    <TypeScriptCompile Include="lib\qloader.d.ts">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="lib\q\components\ActionButton\script.d.ts" />
+    <TypeScriptCompile Include="lib\q\components\Canvas3D\script.d.ts" />
+    <TypeScriptCompile Include="lib\q\components\ClearTabe\script.d.ts" />
+    <TypeScriptCompile Include="lib\q\components\HeavyTable\script.d.ts" />
+    <TypeScriptCompile Include="lib\q\components\QSidebar\script.d.ts" />
+    <TypeScriptCompile Include="lib\q\components\QUI\script.d.ts" />
+    <TypeScriptCompile Include="lib\q\components\StrechyButton\script.d.ts" />
+    <TypeScriptCompile Include="lib\q\components\UniqueForm\script.d.ts" />
+    <TypeScriptCompile Include="lib\q\Core.d.ts" />
+    <TypeScriptCompile Include="lib\q\initQLib.ts" />
+    <TypeScriptCompile Include="lib\q\sys\AI.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\Components.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\Consts.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\Corelib.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\Critere.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\db.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\Decorators.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\defs.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\Dom.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\Encoding.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\Facebook.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\Filters.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\Initializer.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\Jobs.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\QModel.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\Services.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\Syntaxer.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\System.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\Thread.d.ts" />
+    <TypeScriptCompile Include="lib\q\sys\UI.d.ts" />
+    <TypeScriptCompile Include="Mobile\AuthApp.ts" />
+    <TypeScriptCompile Include="Mobile\Common.ts" />
+    <TypeScriptCompile Include="Mobile\Core.ts" />
+    <TypeScriptCompile Include="Mobile\Main.ts" />
+    <TypeScriptCompile Include="Mobile\Pages\Home.ts" />
+    <TypeScriptCompile Include="Mobile\Resources.ts" />
+    <TypeScriptCompile Include="Modules\Charts.ts" />
+    <TypeScriptCompile Include="__supervisor__.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Apps\Calculator\Calc.css" />
+    <Content Include="Apps\Calculator\Calc.html" />
+    <Content Include="assets\data\font-awsom.html" />
+    <Content Include="assets\data\materials-icons.html" />
+    <Content Include="assets\modal-dialog.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Cards.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\data\data.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\favicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\FileManager\font-awesome\css\font-awesome.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\FileManager\font-awesome\css\font-awesome.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\FileManager\font-awesome\fonts\fontawesome-webfont.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\FileManager\Images\prepbootstrap-logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\FileManager\Images\sharing32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\FileManager\Images\template\filemanager\exe-icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\FileManager\Images\template\filemanager\folder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\FileManager\Images\template\filemanager\forbidden-folder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\FileManager\Images\template\filemanager\iso-icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Forms.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\avatar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\avatar2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\img\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\img\QDev.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-background-sync.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-background-sync.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-background-sync.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-background-sync.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-broadcast-cache-update.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-broadcast-cache-update.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-broadcast-cache-update.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-broadcast-cache-update.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-cache-expiration.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-cache-expiration.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-cache-expiration.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-cache-expiration.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-cacheable-response.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-cacheable-response.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-cacheable-response.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-cacheable-response.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-core.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-core.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-core.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-core.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-google-analytics.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-google-analytics.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-google-analytics.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-google-analytics.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-precaching.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-precaching.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-precaching.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-precaching.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-range-requests.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-range-requests.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-range-requests.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-range-requests.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-routing.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-routing.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-routing.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-routing.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-strategies.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-strategies.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-strategies.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-strategies.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-streams.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-streams.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-streams.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-streams.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-sw.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\offlineMode\workbox-sw.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\libs\worker.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\mobile\css\bourbon\bourbon.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\mobile\css\done.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\mobile\css\glyphicons.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\mobile\css\index.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\mobile\css\index.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\mobile\css\roboto.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\mobile\css\style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\mobile\css\style.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\mobile\css\uisearch.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\mobile\favicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\mobile\fonts\roboto-v18-latin-700.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\mobile\fonts\roboto-v18-latin-regular.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\mobile\templates\templates.mobile.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\templates\AdminTemplates.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\templates\FileManager.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\templates\Templates.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EntryPoint.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EntryPoint.min.js">
+      <DependentUpon>EntryPoint.js</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="assets\data\material-icons.json" />
+    <None Include="bundleconfig.json.bindings">
+      <DependentUpon>bundleconfig.json</DependentUpon>
+    </None>
+    <Content Include="index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\Chart.bundle.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\Chart.min.js">
+      <Generator>Content</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\QLoader.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\qloader.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>QLoader.js</DependentUpon>
+    </Content>
+    <Content Include="lib\q\assets\common\bg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\app.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\Canvas3D\dom.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\Canvas3D\Reset.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\Canvas3D\style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\Canvas3D\style.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\ClearTabe\dom.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\ClearTabe\style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\ClearTabe\Style.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\HeavyTable\data.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\HeavyTable\dom.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\HeavyTable\normalize.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\HeavyTable\style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\HeavyTable\style.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\KlasikalLogin\index.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\KlasikalLogin\style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\Login\css\avatar1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\Login\css\avatar2 %281%29.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\Login\css\avatar2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\Login\css\avatar3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\Login\css\avatar4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\Login\css\avatar5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\Login\css\avatar6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\Login\css\img_avatar4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\Login\css\w3.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\Login\login.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\QSidebar\dom.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\QSidebar\style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\QSidebar\style.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\QUI\dom.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\QUI\Reset.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\QUI\style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\StrechyButton\dom.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\StrechyButton\gen .bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\StrechyButton\style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\UniqueForm\dom.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Components\UniqueForm\style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\Data\Primes.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\fonts\glyphicons-halflings-regular.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\fonts\robotoFamily.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\icons\roboto-icons.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\img\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-background-sync.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-background-sync.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-background-sync.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-background-sync.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-broadcast-cache-update.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-broadcast-cache-update.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-broadcast-cache-update.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-broadcast-cache-update.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-cache-expiration.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-cache-expiration.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-cache-expiration.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-cache-expiration.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-cacheable-response.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-cacheable-response.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-cacheable-response.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-cacheable-response.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-core.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-core.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-core.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-core.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-google-analytics.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-google-analytics.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-google-analytics.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-google-analytics.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-precaching.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-precaching.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-precaching.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-precaching.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-range-requests.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-range-requests.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-range-requests.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-range-requests.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-routing.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-routing.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-routing.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-routing.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-strategies.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-strategies.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-strategies.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-strategies.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-streams.dev.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-streams.dev.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-streams.prod.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-streams.prod.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-sw.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\offlineMode\workbox-sw.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\sw.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\sw.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>sw.js</DependentUpon>
+    </Content>
+    <Content Include="lib\q\assets\modules\worker.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\modules\worker.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>worker.js</DependentUpon>
+    </Content>
+    <Content Include="lib\q\assets\style\bundle.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\Components.css" />
+    <Content Include="lib\q\assets\style\fonts\fabric\SegoeUI-WestEuropean\SegoeUI-Light.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\fabric\SegoeUI-WestEuropean\SegoeUI-Light.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\fabric\SegoeUI-WestEuropean\segoeui-regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\fabric\SegoeUI-WestEuropean\segoeui-regular.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\fabric\SegoeUI-WestEuropean\SegoeUI-Semilight.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\fabric\SegoeUI-WestEuropean\segoeui-semilight.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\fontawesome-webfontd41d.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\fontawesome-webfonte0a5.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\fontawesome-webfonte0a5.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\fontawesome-webfonte0a5.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\fontawesome-webfonte0a5.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\glyphicons-halflings-regular.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\glyphicons-halflings-regular.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\ODelI1aHBYDBqgeIAH2zlAC5S7WFEeHRqL6ObGQGT8o.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\ODelI1aHBYDBqgeIAH2zlFjqPhnWKseBf12Mt9_m7kc.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\ODelI1aHBYDBqgeIAH2zlMgmx_L9kV4w6g8dYQOLFUI.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\ODelI1aHBYDBqgeIAH2zlMODs9238LZG2v64UiBIjng.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\ODelI1aHBYDBqgeIAH2zlNOAHFN6BivSraYkjhveRHY.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\PTS-bold.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\PTS-webfont.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\PTS55F-webfont.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\PTS55F-webfont.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\PTS55F-webfont.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\PTS75F-webfont.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\PTS75F-webfont.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\PTS75F-webfont.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\segoeui-regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\segoeui-regular.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\segoeui-semibold.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\toadOcfmlt9b38dHJxOBGDovqjS_dXPZszO_XltPdNg.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\toadOcfmlt9b38dHJxOBGEo0As1BFRXtCDhS66znb_k.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\toadOcfmlt9b38dHJxOBGFxe-GPfKKFmiXaJ_Q0GFr8.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\toadOcfmlt9b38dHJxOBGH2tx1iQUBYLA4fTJZSoO3U.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\toadOcfmlt9b38dHJxOBGHvBSgOUtlSCpvi6_8Wv308.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\toadOcfmlt9b38dHJxOBGJaoTU19aO7Bfv-FLfOt5YM.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\style\fonts\toadOcfmlt9b38dHJxOBGO4f2SQTi4oYi3kh3bYmG2Y.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\templates\Components.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\templates\UITemplates.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\infinitejs.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\FileManager\font-awesome\fonts\fontawesome-webfont.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\FileManager\font-awesome\fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\FileManager\font-awesome\fonts\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\FileManager\font-awesome\fonts\fontawesome-webfont.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\FileManager\font-awesome\fonts\FontAwesome.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="assets\mobile\css\bourbon\bourbon.css.map" />
+    <None Include="assets\mobile\css\bourbon\bourbon.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\helpers\_buttons-list.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\helpers\_scales.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\helpers\_text-inputs-list.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_border-color.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_border-radius.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_border-style.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_border-width.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_buttons.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_clearfix.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_contrast-switch.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_ellipsis.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_font-face.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_font-stacks.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_hide-text.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_hide-visually.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_margin.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_modular-scale.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_overflow-wrap.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_padding.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_position.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_prefixer.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_shade.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_size.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_strip-unit.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_text-inputs.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_timing-functions.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_tint.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_triangle.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\library\_value-prefixer.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\settings\_settings.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\utilities\_assign-inputs.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\utilities\_compact-shorthand.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\utilities\_contrast-ratio.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\utilities\_directional-property.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\utilities\_fetch-bourbon-setting.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\utilities\_font-source-declaration.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\utilities\_gamma.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\utilities\_lightness.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\utilities\_unpack-shorthand.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\validators\_contains-falsy.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\validators\_contains.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\validators\_is-color.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\validators\_is-length.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\validators\_is-number.scss" />
+    <None Include="assets\mobile\css\bourbon\bourbon\validators\_is-size.scss" />
+    <None Include="assets\mobile\css\icommon\codropsicons.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\mobile\css\icommon\icomoon.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\mobile\css\index.css.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\mobile\css\index.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\mobile\css\style.css.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\mobile\css\style.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\mobile\fonts\materialicons.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\mobile\fonts\roboto-v18-latin-700.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\mobile\fonts\roboto-v18-latin-700.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\mobile\fonts\roboto-v18-latin-700.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\mobile\fonts\roboto-v18-latin-700.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\mobile\fonts\roboto-v18-latin-regular.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\mobile\fonts\roboto-v18-latin-regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\mobile\fonts\roboto-v18-latin-regular.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\mobile\fonts\roboto-v18-latin-regular.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="bundleconfig.json" />
+    <None Include="Desktop\Apis\ShopApis.ts_" />
+    <Content Include="lib\q\assets\fonts\glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\fonts\glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\fonts\glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\fonts\glyphicons-halflings-regular.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\icons\roboto-icons-resource.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\fonts\KFOmCnqEu92Fr1Mu4mxK.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\fonts\KFOmCnqEu92Fr1Mu4WxKOzY.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\fonts\KFOmCnqEu92Fr1Mu5mxKOzY.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\fonts\KFOmCnqEu92Fr1Mu72xKOzY.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\fonts\KFOmCnqEu92Fr1Mu7GxKOzY.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\fonts\KFOmCnqEu92Fr1Mu7mxKOzY.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\assets\fonts\KFOmCnqEu92Fr1Mu7WxKOzY.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\q\infinitejs.min.js">
+      <DependentUpon>infinitejs.js</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\utils.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tsconfig.json" />
+    <None Include="package.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\DEFS\" />
+    <Folder Include="assets\FileManager\font-awesome\less\" />
+    <Folder Include="assets\FileManager\font-awesome\scss\" />
+    <Folder Include="assets\mobile\img\" />
+    <Folder Include="lib\q\assets\Components\ActionButton\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties tsconfig_1json__JSONSchema="http://json.schemastore.org/tsconfig" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,2334 @@
+<?xml version="1.0"?>
+<ArrayOfResource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Resource>
+    <filePath>EntryPoint.js</filePath>
+    <RawUrl>/entrypoint.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd0:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>EntryPoint.min.js</filePath>
+    <RawUrl>/entrypoint.min.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd1:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>index.html</filePath>
+    <RawUrl>/index.html</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd2:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>e-shop.min.js</filePath>
+    <RawUrl>/e-shop.min.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd3:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>e-shop.js</filePath>
+    <RawUrl>/e-shop.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd4:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\modal-dialog.css</filePath>
+    <RawUrl>/assets/modal-dialog.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd5:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\Cards.css</filePath>
+    <RawUrl>/assets/cards.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd6:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\favicon.ico</filePath>
+    <RawUrl>/assets/favicon.ico</RawUrl>
+    <ContentType>image/x-icon</ContentType>
+    <Etag>35e674a2bf4bd7:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\Forms.css</filePath>
+    <RawUrl>/assets/forms.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd8:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\data\data.json</filePath>
+    <RawUrl>/assets/data/data.json</RawUrl>
+    <ContentType>text/json</ContentType>
+    <Etag>35e674a2bf4bd9:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\images\avatar.png</filePath>
+    <RawUrl>/assets/images/avatar.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd10:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\images\avatar2.jpg</filePath>
+    <RawUrl>/assets/images/avatar2.jpg</RawUrl>
+    <ContentType>image/jpeg</ContentType>
+    <Etag>35e674a2bf4bd11:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\img\2.png</filePath>
+    <RawUrl>/assets/img/2.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd12:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\img\QDev.png</filePath>
+    <RawUrl>/assets/img/qdev.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd13:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\worker.js</filePath>
+    <RawUrl>/assets/libs/worker.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd14:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-background-sync.dev.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-background-sync.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd15:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-background-sync.dev.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-background-sync.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd16:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-background-sync.prod.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-background-sync.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd17:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-background-sync.prod.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-background-sync.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd18:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-broadcast-cache-update.dev.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-broadcast-cache-update.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd19:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-broadcast-cache-update.dev.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-broadcast-cache-update.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd20:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-broadcast-cache-update.prod.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-broadcast-cache-update.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd21:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-broadcast-cache-update.prod.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-broadcast-cache-update.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd22:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-cache-expiration.dev.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-cache-expiration.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd23:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-cache-expiration.dev.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-cache-expiration.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd24:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-cache-expiration.prod.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-cache-expiration.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd25:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-cache-expiration.prod.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-cache-expiration.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd26:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-cacheable-response.dev.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-cacheable-response.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd27:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-cacheable-response.dev.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-cacheable-response.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd28:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-cacheable-response.prod.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-cacheable-response.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd29:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-cacheable-response.prod.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-cacheable-response.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd30:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-core.dev.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-core.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd31:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-core.dev.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-core.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd32:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-core.prod.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-core.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd33:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-core.prod.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-core.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd34:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-google-analytics.dev.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-google-analytics.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd35:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-google-analytics.dev.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-google-analytics.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd36:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-google-analytics.prod.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-google-analytics.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd37:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-google-analytics.prod.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-google-analytics.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd38:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-precaching.dev.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-precaching.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd39:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-precaching.dev.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-precaching.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd40:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-precaching.prod.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-precaching.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd41:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-precaching.prod.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-precaching.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd42:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-range-requests.dev.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-range-requests.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd43:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-range-requests.dev.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-range-requests.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd44:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-range-requests.prod.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-range-requests.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd45:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-range-requests.prod.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-range-requests.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd46:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-routing.dev.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-routing.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd47:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-routing.dev.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-routing.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd48:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-routing.prod.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-routing.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd49:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-routing.prod.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-routing.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd50:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-strategies.dev.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-strategies.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd51:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-strategies.dev.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-strategies.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd52:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-strategies.prod.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-strategies.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd53:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-strategies.prod.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-strategies.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd54:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-streams.dev.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-streams.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd55:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-streams.dev.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-streams.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd56:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-streams.prod.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-streams.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd57:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-streams.prod.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-streams.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd58:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-sw.js</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-sw.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd59:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\libs\offlineMode\workbox-sw.js.map</filePath>
+    <RawUrl>/assets/libs/offlinemode/workbox-sw.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd60:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\favicon.ico</filePath>
+    <RawUrl>/assets/mobile/favicon.ico</RawUrl>
+    <ContentType>image/x-icon</ContentType>
+    <Etag>35e674a2bf4bd61:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\css\done.png</filePath>
+    <RawUrl>/assets/mobile/css/done.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd62:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\css\glyphicons.css</filePath>
+    <RawUrl>/assets/mobile/css/glyphicons.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd63:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\css\index.css</filePath>
+    <RawUrl>/assets/mobile/css/index.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd64:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\css\index.min.css</filePath>
+    <RawUrl>/assets/mobile/css/index.min.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd65:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\css\roboto.css</filePath>
+    <RawUrl>/assets/mobile/css/roboto.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd66:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\css\style.css</filePath>
+    <RawUrl>/assets/mobile/css/style.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd67:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\css\style.min.css</filePath>
+    <RawUrl>/assets/mobile/css/style.min.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd68:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\css\uisearch.css</filePath>
+    <RawUrl>/assets/mobile/css/uisearch.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd69:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\css\index.css.map</filePath>
+    <RawUrl>/assets/mobile/css/index.css.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd70:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\css\style.css.map</filePath>
+    <RawUrl>/assets/mobile/css/style.css.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd71:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\css\bourbon\bourbon.min.css</filePath>
+    <RawUrl>/assets/mobile/css/bourbon/bourbon.min.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd72:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\css\icommon\codropsicons.woff</filePath>
+    <RawUrl>/assets/mobile/css/icommon/codropsicons.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd73:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\css\icommon\icomoon.woff</filePath>
+    <RawUrl>/assets/mobile/css/icommon/icomoon.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd74:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\fonts\roboto-v18-latin-700.svg</filePath>
+    <RawUrl>/assets/mobile/fonts/roboto-v18-latin-700.svg</RawUrl>
+    <ContentType>image/svg+xml</ContentType>
+    <Etag>35e674a2bf4bd75:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\fonts\roboto-v18-latin-regular.svg</filePath>
+    <RawUrl>/assets/mobile/fonts/roboto-v18-latin-regular.svg</RawUrl>
+    <ContentType>image/svg+xml</ContentType>
+    <Etag>35e674a2bf4bd76:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\fonts\materialicons.woff2</filePath>
+    <RawUrl>/assets/mobile/fonts/materialicons.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd77:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\fonts\roboto-v18-latin-700.eot</filePath>
+    <RawUrl>/assets/mobile/fonts/roboto-v18-latin-700.eot</RawUrl>
+    <ContentType>application/vnd.ms-fontobject</ContentType>
+    <Etag>35e674a2bf4bd78:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\fonts\roboto-v18-latin-700.ttf</filePath>
+    <RawUrl>/assets/mobile/fonts/roboto-v18-latin-700.ttf</RawUrl>
+    <ContentType>application/octet-stream</ContentType>
+    <Etag>35e674a2bf4bd79:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\fonts\roboto-v18-latin-700.woff</filePath>
+    <RawUrl>/assets/mobile/fonts/roboto-v18-latin-700.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd80:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\fonts\roboto-v18-latin-700.woff2</filePath>
+    <RawUrl>/assets/mobile/fonts/roboto-v18-latin-700.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd81:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\fonts\roboto-v18-latin-regular.eot</filePath>
+    <RawUrl>/assets/mobile/fonts/roboto-v18-latin-regular.eot</RawUrl>
+    <ContentType>application/vnd.ms-fontobject</ContentType>
+    <Etag>35e674a2bf4bd82:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\fonts\roboto-v18-latin-regular.ttf</filePath>
+    <RawUrl>/assets/mobile/fonts/roboto-v18-latin-regular.ttf</RawUrl>
+    <ContentType>application/octet-stream</ContentType>
+    <Etag>35e674a2bf4bd83:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\fonts\roboto-v18-latin-regular.woff</filePath>
+    <RawUrl>/assets/mobile/fonts/roboto-v18-latin-regular.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd84:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\fonts\roboto-v18-latin-regular.woff2</filePath>
+    <RawUrl>/assets/mobile/fonts/roboto-v18-latin-regular.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd85:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\mobile\templates\templates.mobile.html</filePath>
+    <RawUrl>/assets/mobile/templates/templates.mobile.html</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd86:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\templates\AdminTemplates.html</filePath>
+    <RawUrl>/assets/templates/admintemplates.html</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd87:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\templates\FileManager.html</filePath>
+    <RawUrl>/assets/templates/filemanager.html</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd88:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\templates\Templates.html</filePath>
+    <RawUrl>/assets/templates/templates.html</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd89:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\FileManager\font-awesome\css\font-awesome.css</filePath>
+    <RawUrl>/assets/filemanager/font-awesome/css/font-awesome.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd90:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\FileManager\font-awesome\css\font-awesome.min.css</filePath>
+    <RawUrl>/assets/filemanager/font-awesome/css/font-awesome.min.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd91:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\FileManager\font-awesome\fonts\fontawesome-webfont.svg</filePath>
+    <RawUrl>/assets/filemanager/font-awesome/fonts/fontawesome-webfont.svg</RawUrl>
+    <ContentType>image/svg+xml</ContentType>
+    <Etag>35e674a2bf4bd92:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\FileManager\font-awesome\fonts\fontawesome-webfont.eot</filePath>
+    <RawUrl>/assets/filemanager/font-awesome/fonts/fontawesome-webfont.eot</RawUrl>
+    <ContentType>application/vnd.ms-fontobject</ContentType>
+    <Etag>35e674a2bf4bd93:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\FileManager\font-awesome\fonts\fontawesome-webfont.ttf</filePath>
+    <RawUrl>/assets/filemanager/font-awesome/fonts/fontawesome-webfont.ttf</RawUrl>
+    <ContentType>application/octet-stream</ContentType>
+    <Etag>35e674a2bf4bd94:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\FileManager\font-awesome\fonts\fontawesome-webfont.woff</filePath>
+    <RawUrl>/assets/filemanager/font-awesome/fonts/fontawesome-webfont.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd95:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\FileManager\font-awesome\fonts\fontawesome-webfont.woff2</filePath>
+    <RawUrl>/assets/filemanager/font-awesome/fonts/fontawesome-webfont.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd96:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\FileManager\font-awesome\fonts\FontAwesome.otf</filePath>
+    <RawUrl>/assets/filemanager/font-awesome/fonts/fontawesome.otf</RawUrl>
+    <ContentType>font/otf</ContentType>
+    <Etag>35e674a2bf4bd97:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\FileManager\Images\prepbootstrap-logo.png</filePath>
+    <RawUrl>/assets/filemanager/images/prepbootstrap-logo.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd98:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\FileManager\Images\sharing32x32.png</filePath>
+    <RawUrl>/assets/filemanager/images/sharing32x32.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd99:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\FileManager\Images\template\filemanager\exe-icon.png</filePath>
+    <RawUrl>/assets/filemanager/images/template/filemanager/exe-icon.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd100:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\FileManager\Images\template\filemanager\folder.png</filePath>
+    <RawUrl>/assets/filemanager/images/template/filemanager/folder.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd101:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\FileManager\Images\template\filemanager\forbidden-folder.png</filePath>
+    <RawUrl>/assets/filemanager/images/template/filemanager/forbidden-folder.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd102:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>assets\FileManager\Images\template\filemanager\iso-icon.png</filePath>
+    <RawUrl>/assets/filemanager/images/template/filemanager/iso-icon.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd103:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\qloader.d.ts</filePath>
+    <RawUrl>/lib/qloader.d.ts</RawUrl>
+    <ContentType>video/vnd.dlna.mpeg-tts</ContentType>
+    <Etag>35e674a2bf4bd104:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\Chart.bundle.js</filePath>
+    <RawUrl>/lib/chart.bundle.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd105:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\Chart.min.js</filePath>
+    <RawUrl>/lib/chart.min.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd106:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\QLoader.js</filePath>
+    <RawUrl>/lib/qloader.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd107:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\qloader.min.js</filePath>
+    <RawUrl>/lib/qloader.min.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd108:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\utils.js</filePath>
+    <RawUrl>/lib/utils.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd109:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\initQLib.ts</filePath>
+    <RawUrl>/lib/q/initqlib.ts</RawUrl>
+    <ContentType>video/vnd.dlna.mpeg-tts</ContentType>
+    <Etag>35e674a2bf4bd110:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\infinitejs.min.js</filePath>
+    <RawUrl>/lib/q/infinitejs.min.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd111:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\infinitejs.js</filePath>
+    <RawUrl>/lib/q/infinitejs.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd112:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\infiniteJs.d.ts</filePath>
+    <RawUrl>/lib/q/infinitejs.d.ts</RawUrl>
+    <ContentType>video/vnd.dlna.mpeg-tts</ContentType>
+    <Etag>35e674a2bf4bd113:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\app.css</filePath>
+    <RawUrl>/lib/q/assets/components/app.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd114:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\Canvas3D\dom.html</filePath>
+    <RawUrl>/lib/q/assets/components/canvas3d/dom.html</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd115:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\Canvas3D\Reset.css</filePath>
+    <RawUrl>/lib/q/assets/components/canvas3d/reset.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd116:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\Canvas3D\style.css</filePath>
+    <RawUrl>/lib/q/assets/components/canvas3d/style.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd117:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\ClearTabe\dom.html</filePath>
+    <RawUrl>/lib/q/assets/components/cleartabe/dom.html</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd118:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\ClearTabe\style.css</filePath>
+    <RawUrl>/lib/q/assets/components/cleartabe/style.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd119:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\HeavyTable\data.json</filePath>
+    <RawUrl>/lib/q/assets/components/heavytable/data.json</RawUrl>
+    <ContentType>text/json</ContentType>
+    <Etag>35e674a2bf4bd120:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\HeavyTable\dom.htm</filePath>
+    <RawUrl>/lib/q/assets/components/heavytable/dom.htm</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd121:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\HeavyTable\normalize.css</filePath>
+    <RawUrl>/lib/q/assets/components/heavytable/normalize.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd122:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\HeavyTable\style.css</filePath>
+    <RawUrl>/lib/q/assets/components/heavytable/style.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd123:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\KlasikalLogin\index.htm</filePath>
+    <RawUrl>/lib/q/assets/components/klasikallogin/index.htm</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd124:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\KlasikalLogin\style.css</filePath>
+    <RawUrl>/lib/q/assets/components/klasikallogin/style.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd125:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\Login\login.html</filePath>
+    <RawUrl>/lib/q/assets/components/login/login.html</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd126:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\Login\css\avatar1.png</filePath>
+    <RawUrl>/lib/q/assets/components/login/css/avatar1.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd127:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\Login\css\avatar2 (1).png</filePath>
+    <RawUrl>/lib/q/assets/components/login/css/avatar2 (1).png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd128:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\Login\css\avatar2.png</filePath>
+    <RawUrl>/lib/q/assets/components/login/css/avatar2.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd129:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\Login\css\avatar3.png</filePath>
+    <RawUrl>/lib/q/assets/components/login/css/avatar3.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd130:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\Login\css\avatar4.png</filePath>
+    <RawUrl>/lib/q/assets/components/login/css/avatar4.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd131:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\Login\css\avatar5.png</filePath>
+    <RawUrl>/lib/q/assets/components/login/css/avatar5.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd132:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\Login\css\avatar6.png</filePath>
+    <RawUrl>/lib/q/assets/components/login/css/avatar6.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd133:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\Login\css\img_avatar4.png</filePath>
+    <RawUrl>/lib/q/assets/components/login/css/img_avatar4.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd134:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\Login\css\w3.css</filePath>
+    <RawUrl>/lib/q/assets/components/login/css/w3.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd135:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\QSidebar\dom.html</filePath>
+    <RawUrl>/lib/q/assets/components/qsidebar/dom.html</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd136:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\QSidebar\style.css</filePath>
+    <RawUrl>/lib/q/assets/components/qsidebar/style.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd137:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\QUI\dom.html</filePath>
+    <RawUrl>/lib/q/assets/components/qui/dom.html</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd138:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\QUI\Reset.css</filePath>
+    <RawUrl>/lib/q/assets/components/qui/reset.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd139:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\QUI\style.css</filePath>
+    <RawUrl>/lib/q/assets/components/qui/style.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd140:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\StrechyButton\dom.html</filePath>
+    <RawUrl>/lib/q/assets/components/strechybutton/dom.html</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd141:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\StrechyButton\style.css</filePath>
+    <RawUrl>/lib/q/assets/components/strechybutton/style.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd142:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\UniqueForm\dom.html</filePath>
+    <RawUrl>/lib/q/assets/components/uniqueform/dom.html</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd143:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Components\UniqueForm\style.css</filePath>
+    <RawUrl>/lib/q/assets/components/uniqueform/style.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd144:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\Data\Primes.json</filePath>
+    <RawUrl>/lib/q/assets/data/primes.json</RawUrl>
+    <ContentType>text/json</ContentType>
+    <Etag>35e674a2bf4bd145:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\img\2.png</filePath>
+    <RawUrl>/lib/q/assets/img/2.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd146:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\sw.js</filePath>
+    <RawUrl>/lib/q/assets/modules/sw.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd147:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\worker.min.js</filePath>
+    <RawUrl>/lib/q/assets/modules/worker.min.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd148:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\sw.min.js</filePath>
+    <RawUrl>/lib/q/assets/modules/sw.min.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd149:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\worker.js</filePath>
+    <RawUrl>/lib/q/assets/modules/worker.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd150:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-background-sync.dev.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-background-sync.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd151:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-background-sync.dev.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-background-sync.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd152:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-background-sync.prod.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-background-sync.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd153:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-background-sync.prod.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-background-sync.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd154:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-broadcast-cache-update.dev.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-broadcast-cache-update.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd155:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-broadcast-cache-update.dev.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-broadcast-cache-update.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd156:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-broadcast-cache-update.prod.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-broadcast-cache-update.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd157:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-broadcast-cache-update.prod.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-broadcast-cache-update.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd158:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-cache-expiration.dev.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-cache-expiration.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd159:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-cache-expiration.dev.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-cache-expiration.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd160:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-cache-expiration.prod.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-cache-expiration.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd161:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-cache-expiration.prod.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-cache-expiration.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd162:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-cacheable-response.dev.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-cacheable-response.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd163:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-cacheable-response.dev.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-cacheable-response.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd164:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-cacheable-response.prod.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-cacheable-response.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd165:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-cacheable-response.prod.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-cacheable-response.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd166:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-core.dev.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-core.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd167:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-core.dev.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-core.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd168:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-core.prod.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-core.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd169:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-core.prod.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-core.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd170:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-google-analytics.dev.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-google-analytics.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd171:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-google-analytics.dev.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-google-analytics.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd172:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-google-analytics.prod.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-google-analytics.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd173:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-google-analytics.prod.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-google-analytics.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd174:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-precaching.dev.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-precaching.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd175:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-precaching.dev.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-precaching.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd176:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-precaching.prod.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-precaching.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd177:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-precaching.prod.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-precaching.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd178:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-range-requests.dev.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-range-requests.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd179:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-range-requests.dev.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-range-requests.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd180:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-range-requests.prod.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-range-requests.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd181:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-range-requests.prod.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-range-requests.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd182:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-routing.dev.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-routing.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd183:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-routing.dev.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-routing.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd184:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-routing.prod.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-routing.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd185:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-routing.prod.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-routing.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd186:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-strategies.dev.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-strategies.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd187:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-strategies.dev.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-strategies.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd188:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-strategies.prod.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-strategies.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd189:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-strategies.prod.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-strategies.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd190:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-streams.dev.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-streams.dev.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd191:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-streams.dev.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-streams.dev.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd192:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-streams.prod.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-streams.prod.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd193:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-streams.prod.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-streams.prod.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd194:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-sw.js</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-sw.js</RawUrl>
+    <ContentType>application/javascript</ContentType>
+    <Etag>35e674a2bf4bd195:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\modules\offlineMode\workbox-sw.js.map</filePath>
+    <RawUrl>/lib/q/assets/modules/offlinemode/workbox-sw.js.map</RawUrl>
+    <ContentType>text/plain</ContentType>
+    <Etag>35e674a2bf4bd196:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\Components.css</filePath>
+    <RawUrl>/lib/q/assets/style/components.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd197:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\bundle.css</filePath>
+    <RawUrl>/lib/q/assets/style/bundle.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd198:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\fontawesome-webfontd41d.eot</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/fontawesome-webfontd41d.eot</RawUrl>
+    <ContentType>application/vnd.ms-fontobject</ContentType>
+    <Etag>35e674a2bf4bd199:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\fontawesome-webfonte0a5.eot</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/fontawesome-webfonte0a5.eot</RawUrl>
+    <ContentType>application/vnd.ms-fontobject</ContentType>
+    <Etag>35e674a2bf4bd200:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\fontawesome-webfonte0a5.svg</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/fontawesome-webfonte0a5.svg</RawUrl>
+    <ContentType>image/svg+xml</ContentType>
+    <Etag>35e674a2bf4bd201:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\fontawesome-webfonte0a5.ttf</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/fontawesome-webfonte0a5.ttf</RawUrl>
+    <ContentType>application/octet-stream</ContentType>
+    <Etag>35e674a2bf4bd202:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\fontawesome-webfonte0a5.woff</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/fontawesome-webfonte0a5.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd203:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\glyphicons-halflings-regular.eot</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/glyphicons-halflings-regular.eot</RawUrl>
+    <ContentType>application/vnd.ms-fontobject</ContentType>
+    <Etag>35e674a2bf4bd204:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\glyphicons-halflings-regular.svg</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/glyphicons-halflings-regular.svg</RawUrl>
+    <ContentType>image/svg+xml</ContentType>
+    <Etag>35e674a2bf4bd205:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\glyphicons-halflings-regular.ttf</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/glyphicons-halflings-regular.ttf</RawUrl>
+    <ContentType>application/octet-stream</ContentType>
+    <Etag>35e674a2bf4bd206:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\glyphicons-halflings-regular.woff</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/glyphicons-halflings-regular.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd207:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\glyphicons-halflings-regular.woff2</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/glyphicons-halflings-regular.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd208:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\ODelI1aHBYDBqgeIAH2zlAC5S7WFEeHRqL6ObGQGT8o.woff2</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/odeli1ahbydbqgeiah2zlac5s7wfeehrql6obgqgt8o.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd209:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/odeli1ahbydbqgeiah2zlc2q8seg17bfdxyr_jusrzg.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd210:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\ODelI1aHBYDBqgeIAH2zlFjqPhnWKseBf12Mt9_m7kc.woff2</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/odeli1ahbydbqgeiah2zlfjqphnwksebf12mt9_m7kc.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd211:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\ODelI1aHBYDBqgeIAH2zlMgmx_L9kV4w6g8dYQOLFUI.woff2</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/odeli1ahbydbqgeiah2zlmgmx_l9kv4w6g8dyqolfui.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd212:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\ODelI1aHBYDBqgeIAH2zlMODs9238LZG2v64UiBIjng.woff2</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/odeli1ahbydbqgeiah2zlmods9238lzg2v64uibijng.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd213:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\ODelI1aHBYDBqgeIAH2zlNOAHFN6BivSraYkjhveRHY.woff2</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/odeli1ahbydbqgeiah2zlnoahfn6bivsraykjhverhy.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd214:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/odeli1ahbydbqgeiah2zlnv_2ngz8dmf8flgjyeouxg.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd215:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\PTS-bold.woff</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/pts-bold.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd216:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\PTS-webfont.woff</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/pts-webfont.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd217:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\PTS55F-webfont.eot</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/pts55f-webfont.eot</RawUrl>
+    <ContentType>application/vnd.ms-fontobject</ContentType>
+    <Etag>35e674a2bf4bd218:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\PTS55F-webfont.ttf</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/pts55f-webfont.ttf</RawUrl>
+    <ContentType>application/octet-stream</ContentType>
+    <Etag>35e674a2bf4bd219:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\PTS55F-webfont.woff</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/pts55f-webfont.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd220:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\PTS75F-webfont.eot</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/pts75f-webfont.eot</RawUrl>
+    <ContentType>application/vnd.ms-fontobject</ContentType>
+    <Etag>35e674a2bf4bd221:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\PTS75F-webfont.ttf</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/pts75f-webfont.ttf</RawUrl>
+    <ContentType>application/octet-stream</ContentType>
+    <Etag>35e674a2bf4bd222:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\PTS75F-webfont.woff</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/pts75f-webfont.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd223:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\segoeui-regular.ttf</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/segoeui-regular.ttf</RawUrl>
+    <ContentType>application/octet-stream</ContentType>
+    <Etag>35e674a2bf4bd224:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\segoeui-regular.woff</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/segoeui-regular.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd225:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\segoeui-semibold.woff</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/segoeui-semibold.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd226:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\toadOcfmlt9b38dHJxOBGDovqjS_dXPZszO_XltPdNg.woff2</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/toadocfmlt9b38dhjxobgdovqjs_dxpzszo_xltpdng.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd227:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\toadOcfmlt9b38dHJxOBGEo0As1BFRXtCDhS66znb_k.woff2</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/toadocfmlt9b38dhjxobgeo0as1bfrxtcdhs66znb_k.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd228:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\toadOcfmlt9b38dHJxOBGFxe-GPfKKFmiXaJ_Q0GFr8.woff2</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/toadocfmlt9b38dhjxobgfxe-gpfkkfmixaj_q0gfr8.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd229:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\toadOcfmlt9b38dHJxOBGH2tx1iQUBYLA4fTJZSoO3U.woff2</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/toadocfmlt9b38dhjxobgh2tx1iqubyla4ftjzsoo3u.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd230:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\toadOcfmlt9b38dHJxOBGHvBSgOUtlSCpvi6_8Wv308.woff2</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/toadocfmlt9b38dhjxobghvbsgoutlscpvi6_8wv308.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd231:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\toadOcfmlt9b38dHJxOBGJaoTU19aO7Bfv-FLfOt5YM.woff2</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/toadocfmlt9b38dhjxobgjaotu19ao7bfv-flfot5ym.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd232:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\toadOcfmlt9b38dHJxOBGO4f2SQTi4oYi3kh3bYmG2Y.woff2</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/toadocfmlt9b38dhjxobgo4f2sqti4oyi3kh3bymg2y.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd233:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\fabric\SegoeUI-WestEuropean\SegoeUI-Light.ttf</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/fabric/segoeui-westeuropean/segoeui-light.ttf</RawUrl>
+    <ContentType>application/octet-stream</ContentType>
+    <Etag>35e674a2bf4bd234:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\fabric\SegoeUI-WestEuropean\SegoeUI-Light.woff</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/fabric/segoeui-westeuropean/segoeui-light.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd235:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\fabric\SegoeUI-WestEuropean\segoeui-regular.ttf</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/fabric/segoeui-westeuropean/segoeui-regular.ttf</RawUrl>
+    <ContentType>application/octet-stream</ContentType>
+    <Etag>35e674a2bf4bd236:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\fabric\SegoeUI-WestEuropean\segoeui-regular.woff</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/fabric/segoeui-westeuropean/segoeui-regular.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd237:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\fabric\SegoeUI-WestEuropean\SegoeUI-Semilight.ttf</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/fabric/segoeui-westeuropean/segoeui-semilight.ttf</RawUrl>
+    <ContentType>application/octet-stream</ContentType>
+    <Etag>35e674a2bf4bd238:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\style\fonts\fabric\SegoeUI-WestEuropean\segoeui-semilight.woff</filePath>
+    <RawUrl>/lib/q/assets/style/fonts/fabric/segoeui-westeuropean/segoeui-semilight.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd239:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\templates\Components.html</filePath>
+    <RawUrl>/lib/q/assets/templates/components.html</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd240:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\templates\UITemplates.html</filePath>
+    <RawUrl>/lib/q/assets/templates/uitemplates.html</RawUrl>
+    <ContentType>text/html</ContentType>
+    <Etag>35e674a2bf4bd241:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\common\bg.png</filePath>
+    <RawUrl>/lib/q/assets/common/bg.png</RawUrl>
+    <ContentType>image/png</ContentType>
+    <Etag>35e674a2bf4bd242:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\fonts\glyphicons-halflings-regular.svg</filePath>
+    <RawUrl>/lib/q/assets/fonts/glyphicons-halflings-regular.svg</RawUrl>
+    <ContentType>image/svg+xml</ContentType>
+    <Etag>35e674a2bf4bd243:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\fonts\robotoFamily.css</filePath>
+    <RawUrl>/lib/q/assets/fonts/robotofamily.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd244:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\fonts\glyphicons-halflings-regular.eot</filePath>
+    <RawUrl>/lib/q/assets/fonts/glyphicons-halflings-regular.eot</RawUrl>
+    <ContentType>application/vnd.ms-fontobject</ContentType>
+    <Etag>35e674a2bf4bd245:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\fonts\glyphicons-halflings-regular.ttf</filePath>
+    <RawUrl>/lib/q/assets/fonts/glyphicons-halflings-regular.ttf</RawUrl>
+    <ContentType>application/octet-stream</ContentType>
+    <Etag>35e674a2bf4bd246:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\fonts\glyphicons-halflings-regular.woff</filePath>
+    <RawUrl>/lib/q/assets/fonts/glyphicons-halflings-regular.woff</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd247:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\fonts\glyphicons-halflings-regular.woff2</filePath>
+    <RawUrl>/lib/q/assets/fonts/glyphicons-halflings-regular.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd248:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\fonts\KFOmCnqEu92Fr1Mu4mxK.woff2</filePath>
+    <RawUrl>/lib/q/assets/fonts/kfomcnqeu92fr1mu4mxk.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd249:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\fonts\KFOmCnqEu92Fr1Mu4WxKOzY.woff2</filePath>
+    <RawUrl>/lib/q/assets/fonts/kfomcnqeu92fr1mu4wxkozy.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd250:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\fonts\KFOmCnqEu92Fr1Mu5mxKOzY.woff2</filePath>
+    <RawUrl>/lib/q/assets/fonts/kfomcnqeu92fr1mu5mxkozy.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd251:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\fonts\KFOmCnqEu92Fr1Mu72xKOzY.woff2</filePath>
+    <RawUrl>/lib/q/assets/fonts/kfomcnqeu92fr1mu72xkozy.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd252:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\fonts\KFOmCnqEu92Fr1Mu7GxKOzY.woff2</filePath>
+    <RawUrl>/lib/q/assets/fonts/kfomcnqeu92fr1mu7gxkozy.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd253:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\fonts\KFOmCnqEu92Fr1Mu7mxKOzY.woff2</filePath>
+    <RawUrl>/lib/q/assets/fonts/kfomcnqeu92fr1mu7mxkozy.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd254:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\fonts\KFOmCnqEu92Fr1Mu7WxKOzY.woff2</filePath>
+    <RawUrl>/lib/q/assets/fonts/kfomcnqeu92fr1mu7wxkozy.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd255:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\icons\roboto-icons.css</filePath>
+    <RawUrl>/lib/q/assets/icons/roboto-icons.css</RawUrl>
+    <ContentType>text/css</ContentType>
+    <Etag>35e674a2bf4bd256:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource>
+    <filePath>lib\q\assets\icons\roboto-icons-resource.woff2</filePath>
+    <RawUrl>/lib/q/assets/icons/roboto-icons-resource.woff2</RawUrl>
+    <ContentType>font/x-woff</ContentType>
+    <Etag>35e674a2bf4bd257:0</Etag>
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+  <Resource xsi:type="AdminResource">
+    <filePath>F:\Test\e-shop\bin\Manifest</filePath>
+    <RawUrl>/Manifest</RawUrl>
+    <ContentType>text/xml</ContentType>
+    <Etag />
+    <Headers>
+      <ReqHeader Key="Service-Worker-Allowed" Value="/" />
+    </Headers>
+  </Resource>
+</ArrayOfResource>

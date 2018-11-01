@@ -1,0 +1,60 @@
+2018-04-27T20:21:40.334Z - error: Error when processing render request Error during rendering report: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything C:\Users\QCompany\node_modules\jsreport-scripts\lib\scriptEvalChild.js:44
+    throw new Error('Unsupported module in scripts: ' + moduleName + '. To enable require on particular module, you need to update the configuration as ' +
+    ^
+
+Error: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything
+    at _require (C:\Users\QCompany\node_modules\jsreport-scripts\lib\scriptEvalChild.js:44:11)
+    at evalmachine.<anonymous>:2:12
+    at Script.runInContext (vm.js:74:29)
+    at Script.runInNewContext (vm.js:80:15)
+    at Object.runInNewContext (vm.js:195:38)
+    at module.exports (C:\Users\QCompany\node_modules\jsreport-scripts\lib\scriptEvalChild.js:123:6)
+    at process.<anonymous> (C:\Users\QCompany\node_modules\script-manager\lib\worker-processes.js:48:36)
+    at process.emit (events.js:160:13)
+    at emit (internal/child_process.js:790:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19) requestId=1
+2018-04-27T20:21:40.336Z - error: Error during processing request: http://localhost:5488/api/report/Orders details: Error during rendering report: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything C:\Users\QCompany\node_modules\jsreport-scripts\lib\scriptEvalChild.js:44
+    throw new Error('Unsupported module in scripts: ' + moduleName + '. To enable require on particular module, you need to update the configuration as ' +
+    ^
+
+Error: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything
+    at _require (C:\Users\QCompany\node_modules\jsreport-scripts\lib\scriptEvalChild.js:44:11)
+    at evalmachine.<anonymous>:2:12
+    at Script.runInContext (vm.js:74:29)
+    at Script.runInNewContext (vm.js:80:15)
+    at Object.runInNewContext (vm.js:195:38)
+    at module.exports (C:\Users\QCompany\node_modules\jsreport-scripts\lib\scriptEvalChild.js:123:6)
+    at process.<anonymous> (C:\Users\QCompany\node_modules\script-manager\lib\worker-processes.js:48:36)
+    at process.emit (events.js:160:13)
+    at emit (internal/child_process.js:790:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+2018-04-27T20:24:33.992Z - error: Error when processing render request Error during rendering report: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything C:\Users\QCompany\node_modules\jsreport-scripts\lib\scriptEvalChild.js:44
+    throw new Error('Unsupported module in scripts: ' + moduleName + '. To enable require on particular module, you need to update the configuration as ' +
+    ^
+
+Error: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything
+    at _require (C:\Users\QCompany\node_modules\jsreport-scripts\lib\scriptEvalChild.js:44:11)
+    at evalmachine.<anonymous>:2:12
+    at Script.runInContext (vm.js:74:29)
+    at Script.runInNewContext (vm.js:80:15)
+    at Object.runInNewContext (vm.js:195:38)
+    at module.exports (C:\Users\QCompany\node_modules\jsreport-scripts\lib\scriptEvalChild.js:123:6)
+    at process.<anonymous> (C:\Users\QCompany\node_modules\script-manager\lib\worker-processes.js:48:36)
+    at process.emit (events.js:160:13)
+    at emit (internal/child_process.js:790:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19) requestId=2
+2018-04-27T20:24:33.995Z - error: Error during processing request: http://localhost:5488/api/report/Orders details: Error during rendering report: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything C:\Users\QCompany\node_modules\jsreport-scripts\lib\scriptEvalChild.js:44
+    throw new Error('Unsupported module in scripts: ' + moduleName + '. To enable require on particular module, you need to update the configuration as ' +
+    ^
+
+Error: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything
+    at _require (C:\Users\QCompany\node_modules\jsreport-scripts\lib\scriptEvalChild.js:44:11)
+    at evalmachine.<anonymous>:2:12
+    at Script.runInContext (vm.js:74:29)
+    at Script.runInNewContext (vm.js:80:15)
+    at Object.runInNewContext (vm.js:195:38)
+    at module.exports (C:\Users\QCompany\node_modules\jsreport-scripts\lib\scriptEvalChild.js:123:6)
+    at process.<anonymous> (C:\Users\QCompany\node_modules\script-manager\lib\worker-processes.js:48:36)
+    at process.emit (events.js:160:13)
+    at emit (internal/child_process.js:790:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)

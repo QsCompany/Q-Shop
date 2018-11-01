@@ -1,0 +1,56 @@
+[
+  {
+    "outputFileName": "bin/e-shop.min.js",
+    "inputFiles": [
+      "bin/e-shop.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "gzip": false,
+      "renameLocals": true,
+      "outputMode": "singleLine",
+      "preserveImportantComments": false
+    }
+  },
+  {
+    "outputFileName": "lib/QLoader.min.js",
+    "inputFiles": [
+      "lib/QLoader.js"
+    ]
+  },
+  {
+    "outputFileName": "lib/q/infinitejs.min.js",
+    "inputFiles": [
+      "lib/q/infinitejs.js"
+    ]
+  },
+  {
+    "outputFileName": "EntryPoint.min.js",
+    "inputFiles": [
+      "EntryPoint.js"
+    ]
+  },
+  {
+    "outputFileName": "lib/brain.min.js",
+    "inputFiles": [
+      "lib/brain.js"
+    ]
+  },
+  {
+    "outputFileName": "lib/q/assets/style/bundle.min.css",
+    "inputFiles": [
+      "lib/q/assets/style/bundle.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine",
+      "adjustRelativePaths": false
+    }
+  },
+  {
+    "outputFileName": "lib/q/assets/modules/sw.min.js",
+    "inputFiles": [
+      "lib/q/assets/modules/sw.js"
+    ]
+  }
+]
